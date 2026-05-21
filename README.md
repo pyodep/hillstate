@@ -9,6 +9,23 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages 배포
+
+이 프로젝트는 GitHub Actions로 `dist`를 빌드해서 GitHub Pages에 배포할 수 있습니다.
+
+1. GitHub 저장소에 코드를 push합니다.
+2. 저장소의 `Settings` → `Pages`로 이동합니다.
+3. `Build and deployment`의 `Source`를 `GitHub Actions`로 선택합니다.
+4. `main` 또는 `master` 브랜치에 push하면 `.github/workflows/deploy-pages.yml`이 자동으로 실행됩니다.
+
+프로젝트 페이지 주소는 보통 아래 형식입니다.
+
+```txt
+https://사용자명.github.io/저장소명/
+```
+
+workflow가 저장소명을 기준으로 Vite `base` 경로를 자동 설정합니다. 저장소가 `사용자명.github.io` 형태인 사용자/조직 Pages 저장소라면 `/` 기준으로 빌드됩니다.
+
 ## 운영 데이터 수정
 
 - 프로젝트명, 문구, 로고, 배경, 기본 타입, 색상: `public/data/site-config.json`
