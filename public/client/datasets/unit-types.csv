@@ -1,5 +1,5 @@
 id,label,householdCount,exclusiveArea,commonArea,supplyArea,contractArea,floorPlan,keyMap,enabled,order,highlight
-34A,34A,156,34.993,15.1976,50.1906,80.5095,/assets/floorplans/34A.png,/assets/keymaps/34A.png,true,1,true
+34A,34A,156,34.993,15.1976,50.1906,80.5095,floorplans/34A.png,keymaps/34A.png,true,1,true
 34B,34B,13,34.9928,15.6591,50.6519,80.9707,,,true,2,false
 36,36,13,36.9234,16.428,53.3514,85.3429,,,true,3,false
 42A,42A,15,42.9923,18.2684,61.2607,98.5106,,,true,4,false

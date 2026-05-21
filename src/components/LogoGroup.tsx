@@ -1,6 +1,6 @@
 import type { LogoGroupLayout } from "../types/layout";
 import type { SiteConfig } from "../types/site";
-import { publicPath } from "../utils/publicPath";
+import { clientAssetPath } from "../utils/publicPath";
 
 type LogoGroupProps = {
   logos: SiteConfig["logos"];
@@ -22,7 +22,7 @@ export function LogoGroup({ logos, layout, compact = false }: LogoGroupProps) {
       }
     >
       {logos.map((logo) => (
-        <img key={logo.id} src={publicPath(logo.src)} alt={logo.alt} />
+        <img key={logo.id} src={clientAssetPath(logo.src)} alt={logo.alt} />
       ))}
     </div>
   );

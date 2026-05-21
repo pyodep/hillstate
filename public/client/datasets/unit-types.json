@@ -10,8 +10,8 @@
       "contract": 80.5095
     },
     "images": {
-      "floorPlan": "/assets/floorplans/34A.png",
-      "keyMap": "/assets/keymaps/34A.png"
+      "floorPlan": "floorplans/34A.png",
+      "keyMap": "keymaps/34A.png"
     },
     "display": {
       "enabled": true,

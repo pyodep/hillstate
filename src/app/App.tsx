@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { loadSiteData, type SiteData } from "../data/loadSiteData";
+import { loadClientContent, type ClientContentData } from "../data/loadClientContent";
 import { MainPage } from "../pages/MainPage";
 import { TypeDetailPage } from "../pages/TypeDetailPage";
 import { TypeListPage } from "../pages/TypeListPage";
 
 export default function App() {
-  const [siteData, setSiteData] = useState<SiteData | null>(null);
+  const [siteData, setSiteData] = useState<ClientContentData | null>(null);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    loadSiteData()
+    loadClientContent()
       .then(setSiteData)
       .catch((reason) => {
         console.error(reason);

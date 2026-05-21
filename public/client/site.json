@@ -7,18 +7,18 @@
   "logos": [
     {
       "id": "the-grid",
-      "src": "/assets/logos/the-grid.png",
+      "src": "logos/the-grid.png",
       "alt": "THE GRID"
     },
     {
       "id": "hillstate",
-      "src": "/assets/logos/hillstate.png",
+      "src": "logos/hillstate.png",
       "alt": "HILLSTATE"
     }
   ],
   "backgrounds": {
-    "main": "/assets/backgrounds/main-bg.jpg",
-    "typeList": "/assets/backgrounds/type-list-bg.jpg",
+    "main": "backgrounds/main.jpg",
+    "typeList": "backgrounds/type-list.jpg",
     "detail": ""
   },
   "cta": {

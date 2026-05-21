@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { publicPath } from "../utils/publicPath";
+import { clientAssetPath } from "../utils/publicPath";
 
 type ImageWithFallbackProps = {
   src?: string;
@@ -20,5 +20,5 @@ export function ImageWithFallback({ src, alt, className = "", fallbackTitle = "ì
     );
   }
 
-  return <img className={className} src={publicPath(src)} alt={alt} onError={() => setFailed(true)} />;
+  return <img className={className} src={clientAssetPath(src)} alt={alt} onError={() => setFailed(true)} />;
 }

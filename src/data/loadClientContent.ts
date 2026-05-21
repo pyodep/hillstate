@@ -9,9 +9,20 @@ import {
 import type { MainLayoutConfig, TypeDetailLayoutConfig, TypeListLayoutConfig } from "../types/layout";
 import type { SiteConfig } from "../types/site";
 import type { UnitType } from "../types/unit";
-import { publicPath } from "../utils/publicPath";
+import { clientContentPath } from "../utils/publicPath";
 
-export type SiteData = {
+const clientFiles = {
+  site: "site.json",
+  typesJson: "datasets/unit-types.json",
+  typesCsv: "datasets/unit-types.csv",
+  layouts: {
+    main: "layouts/main.json",
+    typeList: "layouts/type-list.json",
+    typeDetail: "layouts/type-detail.json",
+  },
+} as const;
+
+export type ClientContentData = {
   siteConfig: SiteConfig;
   unitTypes: UnitType[];
   layouts: {
@@ -22,7 +33,7 @@ export type SiteData = {
 };
 
 async function fetchJson(path: string, label: string) {
-  const response = await fetch(publicPath(path));
+  const response = await fetch(clientContentPath(path));
   if (!response.ok) {
     throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status})`);
   }
@@ -30,7 +41,7 @@ async function fetchJson(path: string, label: string) {
 }
 
 async function fetchText(path: string, label: string) {
-  const response = await fetch(publicPath(path));
+  const response = await fetch(clientContentPath(path));
   if (!response.ok) {
     throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status})`);
   }
@@ -94,18 +105,18 @@ function assertUniqueTypeIds(unitTypes: UnitType[]) {
   }
 }
 
-export async function loadSiteData(): Promise<SiteData> {
-  const siteConfig = SiteConfigSchema.parse(await fetchJson("/data/site-config.json", "site-config.json"));
+export async function loadClientContent(): Promise<ClientContentData> {
+  const siteConfig = SiteConfigSchema.parse(await fetchJson(clientFiles.site, clientFiles.site));
   const [mainLayout, typeListLayout, typeDetailLayout] = await Promise.all([
-    fetchJson("/data/layouts/main-layout.json", "main-layout.json"),
-    fetchJson("/data/layouts/type-list-layout.json", "type-list-layout.json"),
-    fetchJson("/data/layouts/type-detail-layout.json", "type-detail-layout.json"),
+    fetchJson(clientFiles.layouts.main, clientFiles.layouts.main),
+    fetchJson(clientFiles.layouts.typeList, clientFiles.layouts.typeList),
+    fetchJson(clientFiles.layouts.typeDetail, clientFiles.layouts.typeDetail),
   ]);
 
   const unitTypes =
     siteConfig.dataSource === "csv"
-      ? UnitTypesSchema.parse(parseCsvTypes(await fetchText("/data/types.csv", "types.csv")))
-      : UnitTypesSchema.parse(await fetchJson("/data/types.json", "types.json"));
+      ? UnitTypesSchema.parse(parseCsvTypes(await fetchText(clientFiles.typesCsv, clientFiles.typesCsv)))
+      : UnitTypesSchema.parse(await fetchJson(clientFiles.typesJson, clientFiles.typesJson));
 
   assertUniqueTypeIds(unitTypes);
 
