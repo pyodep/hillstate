@@ -1,0 +1,32 @@
+{
+  "backgroundOverlay": {
+    "enabled": true,
+    "color": "rgba(18, 28, 48, 0.42)"
+  },
+  "logoGroup": {
+    "position": "top-right",
+    "top": 40,
+    "right": 54,
+    "gap": 18,
+    "height": 52
+  },
+  "header": {
+    "titleTop": 52,
+    "titleFontSize": 46,
+    "subtitleFontSize": 30
+  },
+  "grid": {
+    "top": 180,
+    "maxWidth": 1028,
+    "columns": 10,
+    "gapX": 12,
+    "gapY": 12,
+    "buttonWidth": 94,
+    "buttonHeight": 64,
+    "buttonFontSize": 27
+  },
+  "backButton": {
+    "top": 38,
+    "left": 38
+  }
+}

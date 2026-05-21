@@ -1,0 +1,38 @@
+{
+  "background": {
+    "type": "solid",
+    "color": "#232b5c"
+  },
+  "logoGroup": {
+    "position": "top-right",
+    "top": 42,
+    "right": 56,
+    "gap": 18,
+    "height": 50
+  },
+  "keyMap": {
+    "left": 54,
+    "top": 54,
+    "width": 300,
+    "height": 210
+  },
+  "typeInfo": {
+    "left": 64,
+    "top": 300,
+    "width": 330,
+    "typeFontSize": 84,
+    "labelFontSize": 22,
+    "valueFontSize": 22
+  },
+  "floorPlan": {
+    "left": "53%",
+    "top": "51%",
+    "maxWidth": 540,
+    "maxHeight": 680
+  },
+  "homeButton": {
+    "right": 44,
+    "bottom": 36,
+    "size": 58
+  }
+}

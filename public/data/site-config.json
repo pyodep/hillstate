@@ -1,0 +1,33 @@
+{
+  "projectName": "힐스테이트 송파더그리드",
+  "subtitle": "미래비전을 품은 복정역 스마트시티의 완성",
+  "typeListTitle": "타입별 세대 안내",
+  "defaultTypeId": "34A",
+  "dataSource": "json",
+  "logos": [
+    {
+      "id": "the-grid",
+      "src": "/assets/logos/the-grid.png",
+      "alt": "THE GRID"
+    },
+    {
+      "id": "hillstate",
+      "src": "/assets/logos/hillstate.png",
+      "alt": "HILLSTATE"
+    }
+  ],
+  "backgrounds": {
+    "main": "/assets/backgrounds/main-bg.jpg",
+    "typeList": "/assets/backgrounds/type-list-bg.jpg",
+    "detail": ""
+  },
+  "cta": {
+    "label": "타입별 세대 안내 >>",
+    "target": "/types"
+  },
+  "theme": {
+    "primaryColor": "#b8212d",
+    "darkBackground": "#232b5c",
+    "buttonRadius": 8
+  }
+}

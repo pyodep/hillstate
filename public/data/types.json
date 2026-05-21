@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "34A",
+    "label": "34A",
+    "householdCount": 156,
+    "areas": {
+      "exclusive": 34.993,
+      "common": 15.1976,
+      "supply": 50.1906,
+      "contract": 80.5095
+    },
+    "images": {
+      "floorPlan": "/assets/floorplans/34A.png",
+      "keyMap": "/assets/keymaps/34A.png"
+    },
+    "display": {
+      "enabled": true,
+      "order": 1,
+      "highlight": true
+    }
+  },
+  {
+    "id": "34B",
+    "label": "34B",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 34.9928,
+      "common": 15.6591,
+      "supply": 50.6519,
+      "contract": 80.9707
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 2,
+      "highlight": false
+    }
+  },
+  {
+    "id": "36",
+    "label": "36",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 36.9234,
+      "common": 16.428,
+      "supply": 53.3514,
+      "contract": 85.3429
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 3,
+      "highlight": false
+    }
+  },
+  {
+    "id": "42A",
+    "label": "42A",
+    "householdCount": 15,
+    "areas": {
+      "exclusive": 42.9923,
+      "common": 18.2684,
+      "supply": 61.2607,
+      "contract": 98.5106
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 4,
+      "highlight": false
+    }
+  },
+  {
+    "id": "42B1",
+    "label": "42B1",
+    "householdCount": 104,
+    "areas": {
+      "exclusive": 42.0685,
+      "common": 17.8984,
+      "supply": 59.9669,
+      "contract": 96.4163
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 5,
+      "highlight": false
+    }
+  },
+  {
+    "id": "42B2",
+    "label": "42B2",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 42.0685,
+      "common": 17.947,
+      "supply": 60.0155,
+      "contract": 96.4649
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 6,
+      "highlight": false
+    }
+  },
+  {
+    "id": "42C1",
+    "label": "42C1",
+    "householdCount": 65,
+    "areas": {
+      "exclusive": 42.302,
+      "common": 18.3544,
+      "supply": 60.6564,
+      "contract": 97.3082
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 7,
+      "highlight": false
+    }
+  },
+  {
+    "id": "42C2",
+    "label": "42C2",
+    "householdCount": 26,
+    "areas": {
+      "exclusive": 42.302,
+      "common": 18.7452,
+      "supply": 61.0472,
+      "contract": 97.699
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 8,
+      "highlight": false
+    }
+  },
+  {
+    "id": "48",
+    "label": "48",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 48.3724,
+      "common": 20.8864,
+      "supply": 69.2588,
+      "contract": 111.1701
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 9,
+      "highlight": false
+    }
+  },
+  {
+    "id": "50A",
+    "label": "50A",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 50.9793,
+      "common": 21.7821,
+      "supply": 72.7614,
+      "contract": 116.9314
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 10,
+      "highlight": false
+    }
+  },
+  {
+    "id": "50B",
+    "label": "50B",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 50.3598,
+      "common": 21.7987,
+      "supply": 72.1585,
+      "contract": 115.7917
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 11,
+      "highlight": false
+    }
+  },
+  {
+    "id": "50C",
+    "label": "50C",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 50.7902,
+      "common": 21.9623,
+      "supply": 72.7525,
+      "contract": 116.7586
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 12,
+      "highlight": false
+    }
+  },
+  {
+    "id": "52",
+    "label": "52",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 52.6116,
+      "common": 22.3047,
+      "supply": 74.9163,
+      "contract": 120.5007
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 13,
+      "highlight": false
+    }
+  },
+  {
+    "id": "54A",
+    "label": "54A",
+    "householdCount": 117,
+    "areas": {
+      "exclusive": 54.7335,
+      "common": 22.8685,
+      "supply": 77.602,
+      "contract": 125.0247
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 14,
+      "highlight": false
+    }
+  },
+  {
+    "id": "54B",
+    "label": "54B",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 54.8183,
+      "common": 22.966,
+      "supply": 77.7843,
+      "contract": 125.2806
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 15,
+      "highlight": false
+    }
+  },
+  {
+    "id": "55A",
+    "label": "55A",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 55.8254,
+      "common": 23.9653,
+      "supply": 79.7907,
+      "contract": 128.1596
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 16,
+      "highlight": false
+    }
+  },
+  {
+    "id": "55B",
+    "label": "55B",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 55.8783,
+      "common": 23.8648,
+      "supply": 79.7431,
+      "contract": 128.1577
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 17,
+      "highlight": false
+    }
+  },
+  {
+    "id": "57",
+    "label": "57",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 57.7044,
+      "common": 24.5775,
+      "supply": 82.2819,
+      "contract": 132.2788
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 18,
+      "highlight": false
+    }
+  },
+  {
+    "id": "58A1",
+    "label": "58A1",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 58.2638,
+      "common": 24.584,
+      "supply": 82.8478,
+      "contract": 133.3293
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 19,
+      "highlight": false
+    }
+  },
+  {
+    "id": "58A2",
+    "label": "58A2",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 58.2638,
+      "common": 24.9814,
+      "supply": 83.2452,
+      "contract": 133.7267
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 20,
+      "highlight": false
+    }
+  },
+  {
+    "id": "59A",
+    "label": "59A",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 59.6034,
+      "common": 24.5008,
+      "supply": 84.1042,
+      "contract": 135.7464
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 21,
+      "highlight": false
+    }
+  },
+  {
+    "id": "59B",
+    "label": "59B",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 59.5817,
+      "common": 25.3925,
+      "supply": 84.9742,
+      "contract": 136.5977
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 22,
+      "highlight": false
+    }
+  },
+  {
+    "id": "60",
+    "label": "60",
+    "householdCount": 28,
+    "areas": {
+      "exclusive": 60.3737,
+      "common": 25.0089,
+      "supply": 85.3826,
+      "contract": 137.6922
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 23,
+      "highlight": false
+    }
+  },
+  {
+    "id": "61",
+    "label": "61",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 61.0641,
+      "common": 25.1746,
+      "supply": 86.2387,
+      "contract": 139.1465
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 24,
+      "highlight": false
+    }
+  },
+  {
+    "id": "62",
+    "label": "62",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 62.0416,
+      "common": 26.2009,
+      "supply": 88.2425,
+      "contract": 141.9973
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 25,
+      "highlight": false
+    }
+  },
+  {
+    "id": "75",
+    "label": "75",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 75.6578,
+      "common": 31.567,
+      "supply": 107.2248,
+      "contract": 172.7771
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 26,
+      "highlight": false
+    }
+  },
+  {
+    "id": "78",
+    "label": "78",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 78.4475,
+      "common": 32.1129,
+      "supply": 110.5604,
+      "contract": 178.5298
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 27,
+      "highlight": false
+    }
+  },
+  {
+    "id": "79",
+    "label": "79",
+    "householdCount": 27,
+    "areas": {
+      "exclusive": 79.9813,
+      "common": 33.0253,
+      "supply": 113.0066,
+      "contract": 182.3049
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 28,
+      "highlight": false
+    }
+  },
+  {
+    "id": "82",
+    "label": "82",
+    "householdCount": 13,
+    "areas": {
+      "exclusive": 82.9362,
+      "common": 33.9199,
+      "supply": 116.8561,
+      "contract": 188.7146
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 29,
+      "highlight": false
+    }
+  },
+  {
+    "id": "84",
+    "label": "84",
+    "householdCount": 55,
+    "areas": {
+      "exclusive": 84.9548,
+      "common": 35.496,
+      "supply": 120.4508,
+      "contract": 194.0583
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 30,
+      "highlight": false
+    }
+  },
+  {
+    "id": "88",
+    "label": "88",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 88.6848,
+      "common": 36.8863,
+      "supply": 125.5711,
+      "contract": 202.4105
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 31,
+      "highlight": false
+    }
+  },
+  {
+    "id": "89",
+    "label": "89",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 89.8339,
+      "common": 37.2583,
+      "supply": 127.0922,
+      "contract": 204.9271
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 32,
+      "highlight": false
+    }
+  },
+  {
+    "id": "91",
+    "label": "91",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 91.3172,
+      "common": 38.0923,
+      "supply": 129.4095,
+      "contract": 208.5297
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 33,
+      "highlight": false
+    }
+  },
+  {
+    "id": "95",
+    "label": "95",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 95.9534,
+      "common": 38.8724,
+      "supply": 134.8258,
+      "contract": 217.9628
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 34,
+      "highlight": false
+    }
+  },
+  {
+    "id": "96A",
+    "label": "96A",
+    "householdCount": 25,
+    "areas": {
+      "exclusive": 96.4065,
+      "common": 38.8945,
+      "supply": 135.301,
+      "contract": 218.8307
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 35,
+      "highlight": false
+    }
+  },
+  {
+    "id": "96B",
+    "label": "96B",
+    "householdCount": 24,
+    "areas": {
+      "exclusive": 96.6677,
+      "common": 38.6869,
+      "supply": 135.3546,
+      "contract": 219.1106
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 36,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98A",
+    "label": "98A",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 98.9995,
+      "common": 40.9514,
+      "supply": 139.9509,
+      "contract": 225.7272
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 37,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98B",
+    "label": "98B",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 98.3497,
+      "common": 40.3512,
+      "supply": 138.7009,
+      "contract": 223.9142
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 38,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98C",
+    "label": "98C",
+    "householdCount": 27,
+    "areas": {
+      "exclusive": 98.7677,
+      "common": 40.6583,
+      "supply": 139.426,
+      "contract": 225.0015
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 39,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98D",
+    "label": "98D",
+    "householdCount": 32,
+    "areas": {
+      "exclusive": 98.8385,
+      "common": 40.2871,
+      "supply": 139.1256,
+      "contract": 224.7624
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 40,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98E",
+    "label": "98E",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 98.1206,
+      "common": 40.6858,
+      "supply": 138.8064,
+      "contract": 223.8213
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 41,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98F",
+    "label": "98F",
+    "householdCount": 11,
+    "areas": {
+      "exclusive": 98.3209,
+      "common": 40.6837,
+      "supply": 139.0046,
+      "contract": 224.193
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 42,
+      "highlight": false
+    }
+  },
+  {
+    "id": "98G",
+    "label": "98G",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 98.3372,
+      "common": 40.0073,
+      "supply": 138.3445,
+      "contract": 223.547
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 43,
+      "highlight": false
+    }
+  },
+  {
+    "id": "99A",
+    "label": "99A",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 99.1455,
+      "common": 40.2025,
+      "supply": 139.348,
+      "contract": 225.2508
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 44,
+      "highlight": false
+    }
+  },
+  {
+    "id": "99B",
+    "label": "99B",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 99.1828,
+      "common": 40.5395,
+      "supply": 139.7223,
+      "contract": 225.6575
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 45,
+      "highlight": false
+    }
+  },
+  {
+    "id": "100A",
+    "label": "100A",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 100.558,
+      "common": 40.646,
+      "supply": 141.204,
+      "contract": 228.3306
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 46,
+      "highlight": false
+    }
+  },
+  {
+    "id": "100B",
+    "label": "100B",
+    "householdCount": 11,
+    "areas": {
+      "exclusive": 100.3599,
+      "common": 41.5824,
+      "supply": 141.9423,
+      "contract": 228.8974
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 47,
+      "highlight": false
+    }
+  },
+  {
+    "id": "104",
+    "label": "104",
+    "householdCount": 27,
+    "areas": {
+      "exclusive": 104.2748,
+      "common": 42.3089,
+      "supply": 146.5837,
+      "contract": 236.9307
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 48,
+      "highlight": false
+    }
+  },
+  {
+    "id": "105A",
+    "label": "105A",
+    "householdCount": 16,
+    "areas": {
+      "exclusive": 105.0715,
+      "common": 42.6995,
+      "supply": 147.771,
+      "contract": 238.8083
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 49,
+      "highlight": false
+    }
+  },
+  {
+    "id": "105B",
+    "label": "105B",
+    "householdCount": 27,
+    "areas": {
+      "exclusive": 105.3813,
+      "common": 42.4852,
+      "supply": 147.8665,
+      "contract": 239.1722
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 50,
+      "highlight": false
+    }
+  },
+  {
+    "id": "105C",
+    "label": "105C",
+    "householdCount": 12,
+    "areas": {
+      "exclusive": 105.6746,
+      "common": 43.401,
+      "supply": 149.0756,
+      "contract": 240.6355
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 51,
+      "highlight": false
+    }
+  },
+  {
+    "id": "106",
+    "label": "106",
+    "householdCount": 27,
+    "areas": {
+      "exclusive": 106.9932,
+      "common": 43.7963,
+      "supply": 150.7895,
+      "contract": 243.4918
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 52,
+      "highlight": false
+    }
+  },
+  {
+    "id": "108",
+    "label": "108",
+    "householdCount": 14,
+    "areas": {
+      "exclusive": 108.3778,
+      "common": 44.3403,
+      "supply": 152.7181,
+      "contract": 246.6202
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 53,
+      "highlight": false
+    }
+  },
+  {
+    "id": "111",
+    "label": "111",
+    "householdCount": 28,
+    "areas": {
+      "exclusive": 111.1793,
+      "common": 45.0007,
+      "supply": 156.18,
+      "contract": 252.5093
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 54,
+      "highlight": false
+    }
+  },
+  {
+    "id": "115",
+    "label": "115",
+    "householdCount": 1,
+    "areas": {
+      "exclusive": 115.8413,
+      "common": 47.4377,
+      "supply": 163.279,
+      "contract": 263.8712
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 55,
+      "highlight": false
+    }
+  },
+  {
+    "id": "118",
+    "label": "118",
+    "householdCount": 54,
+    "areas": {
+      "exclusive": 118.4961,
+      "common": 47.7563,
+      "supply": 166.2524,
+      "contract": 268.9213
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 56,
+      "highlight": false
+    }
+  },
+  {
+    "id": "119A",
+    "label": "119A",
+    "householdCount": 55,
+    "areas": {
+      "exclusive": 119.5602,
+      "common": 48.856,
+      "supply": 168.4162,
+      "contract": 272.007
+    },
+    "images": {
+      "floorPlan": "",
+      "keyMap": ""
+    },
+    "display": {
+      "enabled": true,
+      "order": 57,
+      "highlight": false
+    }
+  }
+]

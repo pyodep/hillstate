@@ -1,0 +1,25 @@
+{
+  "backgroundOverlay": {
+    "enabled": true,
+    "color": "rgba(255, 255, 255, 0.16)"
+  },
+  "logoGroup": {
+    "position": "top-right",
+    "top": 42,
+    "right": 58,
+    "gap": 22,
+    "height": 62
+  },
+  "hero": {
+    "align": "center",
+    "top": "25%",
+    "titleFontSize": 58,
+    "subtitleFontSize": 30
+  },
+  "cta": {
+    "width": 320,
+    "height": 88,
+    "fontSize": 30,
+    "top": "56%"
+  }
+}
