@@ -13,6 +13,15 @@ export const SiteConfigSchema = z.object({
       alt: z.string().min(1),
     }),
   ),
+  detailLogos: z
+    .array(
+      z.object({
+        id: z.string().min(1),
+        src: z.string().min(1),
+        alt: z.string().min(1),
+      }),
+    )
+    .optional(),
   backgrounds: z.object({
     main: z.string().min(1),
     typeList: z.string().min(1),
@@ -43,6 +52,16 @@ export const UnitTypeSchema = z.object({
     floorPlan: z.string(),
     keyMap: z.string(),
   }),
+  roomLabels: z
+    .array(
+      z.object({
+        text: z.string().min(1),
+        x: z.number(),
+        y: z.number(),
+        fontSize: z.number().optional(),
+      }),
+    )
+    .optional(),
   display: z.object({
     enabled: z.boolean(),
     order: z.number(),

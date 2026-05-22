@@ -1,38 +1,38 @@
 {
   "background": {
     "type": "solid",
-    "color": "#232b5c"
+    "color": "linear-gradient(90deg, #07102c 0%, #19224b 46%, #555b82 100%)"
   },
   "logoGroup": {
     "position": "top-right",
-    "top": 42,
-    "right": 56,
-    "gap": 18,
-    "height": 50
+    "top": 40,
+    "right": 42,
+    "gap": 16,
+    "height": 60
   },
   "keyMap": {
-    "left": 54,
-    "top": 54,
-    "width": 300,
-    "height": 210
+    "left": 63,
+    "top": 67,
+    "width": 214,
+    "height": 132
   },
   "typeInfo": {
-    "left": 64,
-    "top": 300,
-    "width": 330,
-    "typeFontSize": 84,
+    "left": 63,
+    "top": 282,
+    "width": 214,
+    "typeFontSize": 86,
     "labelFontSize": 22,
     "valueFontSize": 22
   },
   "floorPlan": {
-    "left": "53%",
+    "left": "61.5%",
     "top": "51%",
-    "maxWidth": 540,
-    "maxHeight": 680
+    "maxWidth": 240,
+    "maxHeight": 430
   },
   "homeButton": {
-    "right": 44,
-    "bottom": 36,
+    "right": 42,
+    "bottom": 32,
     "size": 58
   }
 }

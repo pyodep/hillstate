@@ -43,6 +43,7 @@ public/client/
 - 화면 위치와 크기: `public/client/layouts/*.json`
 - 평면도 이미지: `public/client/floorplans`
 - 키맵 이미지: `public/client/keymaps`
+- 상세 화면 전용 흰색 로고: `public/client/logos/the-grid-white.png`, `public/client/logos/hillstate-white.png`
 
 ## 타입 추가
 
@@ -63,6 +64,14 @@ public/client/
     "floorPlan": "floorplans/34A.png",
     "keyMap": "keymaps/34A.png"
   },
+  "roomLabels": [
+    {
+      "text": "거실/침실",
+      "x": 55,
+      "y": 35,
+      "fontSize": 13
+    }
+  ],
   "display": {
     "enabled": true,
     "order": 1,

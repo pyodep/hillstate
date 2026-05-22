@@ -12,6 +12,12 @@ export type UnitType = {
     floorPlan: string;
     keyMap: string;
   };
+  roomLabels?: {
+    text: string;
+    x: number;
+    y: number;
+    fontSize?: number;
+  }[];
   display: {
     enabled: boolean;
     order: number;

@@ -9,6 +9,11 @@ export type SiteConfig = {
     src: string;
     alt: string;
   }[];
+  detailLogos?: {
+    id: string;
+    src: string;
+    alt: string;
+  }[];
   backgrounds: {
     main: string;
     typeList: string;

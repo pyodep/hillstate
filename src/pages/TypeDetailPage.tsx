@@ -35,7 +35,7 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
 
   return (
     <main className="screen detail-page" style={{ background: layout.background.color }}>
-      <LogoGroup logos={siteConfig.logos} layout={layout.logoGroup} compact />
+      <LogoGroup logos={siteConfig.detailLogos ?? siteConfig.logos} layout={layout.logoGroup} compact />
       <section
         className="keymap-panel"
         style={
@@ -87,12 +87,30 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
           } as React.CSSProperties
         }
       >
-        <ImageWithFallback
-          src={unitType.images.floorPlan}
-          alt={`${unitType.label} 평면도`}
-          className="floorplan-image"
-          fallbackTitle="평면도 준비 중"
-        />
+        <div className="floorplan-stage">
+          <ImageWithFallback
+            src={unitType.images.floorPlan}
+            alt={`${unitType.label} 평면도`}
+            className="floorplan-image"
+            fallbackTitle="평면도 준비 중"
+          />
+          {unitType.roomLabels?.map((label) => (
+            <span
+              key={`${label.text}-${label.x}-${label.y}`}
+              className="room-label"
+              style={
+                {
+                  "--room-label-x": `${label.x}%`,
+                  "--room-label-y": `${label.y}%`,
+                  "--room-label-font-size": `${label.fontSize ?? 13}px`,
+                } as React.CSSProperties
+              }
+            >
+              {label.text}
+            </span>
+          ))}
+          {unitType.roomLabels?.length ? <span className="entry-marker" aria-hidden="true" /> : null}
+        </div>
       </section>
       <Link
         className="detail-back-link"
@@ -122,7 +140,7 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
           } as React.CSSProperties
         }
       >
-        <Home aria-hidden="true" size={30} strokeWidth={2.4} />
+        <Home aria-hidden="true" size={42} fill="currentColor" strokeWidth={0} />
       </Link>
     </main>
   );

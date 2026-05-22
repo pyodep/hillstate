@@ -16,6 +16,18 @@
       "alt": "HILLSTATE"
     }
   ],
+  "detailLogos": [
+    {
+      "id": "the-grid-white",
+      "src": "logos/the-grid-white.png",
+      "alt": "THE GRID"
+    },
+    {
+      "id": "hillstate-white",
+      "src": "logos/hillstate-white.png",
+      "alt": "HILLSTATE"
+    }
+  ],
   "backgrounds": {
     "main": "backgrounds/main.jpg",
     "typeList": "backgrounds/type-list.jpg",

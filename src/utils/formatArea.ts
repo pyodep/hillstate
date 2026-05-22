@@ -1,6 +1,8 @@
 export function formatArea(value: number) {
-  return value.toLocaleString("ko-KR", {
+  const truncated = Math.trunc(value * 100) / 100;
+
+  return truncated.toLocaleString("ko-KR", {
     minimumFractionDigits: 2,
-    maximumFractionDigits: 4,
+    maximumFractionDigits: 2,
   });
 }
