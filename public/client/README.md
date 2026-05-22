@@ -5,7 +5,7 @@
 ## 자주 수정하는 파일
 
 - `site.json`: 프로젝트명, 메인 문구, 버튼 문구, 로고, 상세 화면 전용 로고, 배경, 기본 선택 타입, 색상
-- `datasets/unit-types.json`: 타입 목록, 세대수, 면적, 평면도, 키맵 연결, 평면도 위 방 이름 라벨
+- `datasets/unit-types.json`: 타입 목록, 세대수, 면적, 평면도, 키맵 연결
 - `datasets/unit-types.csv`: Excel에서 편집하기 쉬운 타입 데이터
 - `layouts/*.json`: 화면별 위치, 크기, 간격
 
@@ -28,23 +28,6 @@
 ```
 
 예를 들어 `floorplans/59A.png` 파일을 추가했다면 `unit-types.json`에는 `"floorPlan": "floorplans/59A.png"`라고 적습니다.
-
-## 평면도 위 방 이름 라벨
-
-`unit-types.json`에서 타입별로 `roomLabels`를 추가하면 평면도 위에 방 이름을 표시합니다. `x`, `y`는 평면도 이미지 기준 퍼센트 위치입니다.
-
-```json
-{
-  "roomLabels": [
-    {
-      "text": "거실/침실",
-      "x": 55,
-      "y": 35,
-      "fontSize": 13
-    }
-  ]
-}
-```
 
 ## CSV 사용
 

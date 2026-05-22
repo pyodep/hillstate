@@ -64,14 +64,6 @@ public/client/
     "floorPlan": "floorplans/34A.png",
     "keyMap": "keymaps/34A.png"
   },
-  "roomLabels": [
-    {
-      "text": "거실/침실",
-      "x": 55,
-      "y": 35,
-      "fontSize": 13
-    }
-  ],
   "display": {
     "enabled": true,
     "order": 1,

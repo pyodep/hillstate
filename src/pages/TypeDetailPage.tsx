@@ -1,4 +1,4 @@
-import { ChevronLeft, Home } from "lucide-react";
+import { Home } from "lucide-react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { LogoGroup } from "../components/LogoGroup";
@@ -94,39 +94,8 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
             className="floorplan-image"
             fallbackTitle="평면도 준비 중"
           />
-          {unitType.roomLabels?.map((label) => (
-            <span
-              key={`${label.text}-${label.x}-${label.y}`}
-              className="room-label"
-              style={
-                {
-                  "--room-label-x": `${label.x}%`,
-                  "--room-label-y": `${label.y}%`,
-                  "--room-label-font-size": `${label.fontSize ?? 13}px`,
-                } as React.CSSProperties
-              }
-            >
-              {label.text}
-            </span>
-          ))}
-          {unitType.roomLabels?.length ? <span className="entry-marker" aria-hidden="true" /> : null}
         </div>
       </section>
-      <Link
-        className="detail-back-link"
-        to="/types"
-        aria-label="타입 선택으로 돌아가기"
-        title="타입 선택으로 돌아가기"
-        style={
-          {
-            "--home-right": `${layout.homeButton.right}px`,
-            "--home-bottom": `${layout.homeButton.bottom}px`,
-            "--home-size": `${layout.homeButton.size}px`,
-          } as React.CSSProperties
-        }
-      >
-        <ChevronLeft aria-hidden="true" size={34} strokeWidth={2.6} />
-      </Link>
       <Link
         className="home-link"
         to="/"

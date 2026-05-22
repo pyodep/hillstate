@@ -52,16 +52,6 @@ export const UnitTypeSchema = z.object({
     floorPlan: z.string(),
     keyMap: z.string(),
   }),
-  roomLabels: z
-    .array(
-      z.object({
-        text: z.string().min(1),
-        x: z.number(),
-        y: z.number(),
-        fontSize: z.number().optional(),
-      }),
-    )
-    .optional(),
   display: z.object({
     enabled: z.boolean(),
     order: z.number(),
