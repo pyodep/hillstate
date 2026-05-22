@@ -61,14 +61,11 @@ export function TypeListPage({ siteConfig, unitTypes, layout }: TypeListPageProp
           } as React.CSSProperties
         }
       >
-        {visibleTypes.map((unitType) => {
-          const highlighted = unitType.id === siteConfig.defaultTypeId || unitType.display.highlight;
-          return (
-            <Link key={unitType.id} to={`/types/${unitType.id}`} className={`type-button ${highlighted ? "type-button--active" : ""}`}>
-              {unitType.label}
-            </Link>
-          );
-        })}
+        {visibleTypes.map((unitType) => (
+          <Link key={unitType.id} to={`/types/${unitType.id}`} className="type-button">
+            {unitType.label}
+          </Link>
+        ))}
       </nav>
     </BackgroundLayout>
   );

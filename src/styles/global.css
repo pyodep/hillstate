@@ -240,19 +240,10 @@ a {
 
 .type-button:hover,
 .type-button:focus-visible {
-  background: #fff;
-  transform: translateY(-2px);
-}
-
-.type-button--active {
   color: #fff;
   background: var(--color-primary);
   box-shadow: 0 8px 18px rgba(120, 16, 25, 0.3);
-}
-
-.type-button--active:hover,
-.type-button--active:focus-visible {
-  background: var(--color-primary-dark);
+  transform: translateY(-2px);
 }
 
 .detail-page {
@@ -285,9 +276,9 @@ a {
 
 .keymap-image,
 .keymap-panel .image-fallback {
-  width: calc(var(--keymap-width) - 10px);
+  width: calc(var(--keymap-width) - 30px);
   height: var(--keymap-height);
-  margin-left: 5px;
+  margin-left: 15px;
   object-fit: contain;
 }
 
@@ -300,7 +291,7 @@ a {
 }
 
 .type-info h1 {
-  margin: 0 0 22px;
+  margin: 0 0 22px 27px;
   color: #fff;
   font-size: var(--type-font-size);
   font-weight: 900;
@@ -451,7 +442,7 @@ a {
 
 .detail-back-link {
   right: calc(var(--home-right) + var(--home-size) + 14px);
-  opacity: 0.84;
+  display: none;
 }
 
 .home-link:hover,

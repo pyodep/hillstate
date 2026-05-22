@@ -6,7 +6,7 @@
   "logoGroup": {
     "position": "top-right",
     "top": 40,
-    "right": 42,
+    "right": 58,
     "gap": 16,
     "height": 60
   },
@@ -14,7 +14,7 @@
     "left": 63,
     "top": 67,
     "width": 214,
-    "height": 132
+    "height": 128
   },
   "typeInfo": {
     "left": 63,
@@ -25,13 +25,13 @@
     "valueFontSize": 22
   },
   "floorPlan": {
-    "left": "61.5%",
-    "top": "51%",
+    "left": "60.5%",
+    "top": "50%",
     "maxWidth": 240,
     "maxHeight": 430
   },
   "homeButton": {
-    "right": 42,
+    "right": 56,
     "bottom": 32,
     "size": 58
   }

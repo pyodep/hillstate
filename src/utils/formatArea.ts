@@ -1,5 +1,5 @@
 export function formatArea(value: number) {
-  const truncated = Math.trunc(value * 100) / 100;
+  const truncated = Math.floor(value * 100) / 100;
 
   return truncated.toLocaleString("ko-KR", {
     minimumFractionDigits: 2,
