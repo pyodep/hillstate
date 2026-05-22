@@ -12,13 +12,13 @@
   },
   "keyMap": {
     "left": 63,
-    "top": 67,
+    "top": 76,
     "width": 214,
     "height": 128
   },
   "typeInfo": {
     "left": 63,
-    "top": 282,
+    "top": 294,
     "width": 214,
     "typeFontSize": 86,
     "labelFontSize": 22,
@@ -26,7 +26,7 @@
   },
   "floorPlan": {
     "left": "60.5%",
-    "top": "50%",
+    "top": "48%",
     "maxWidth": 240,
     "maxHeight": 430
   },
