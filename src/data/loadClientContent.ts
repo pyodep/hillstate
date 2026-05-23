@@ -34,7 +34,9 @@ export type ClientContentData = {
 
 async function fetchJson(path: string, label: string) {
   const url = clientContentPath(path);
-  const response = await fetch(url);
+  const response = await fetch(url).catch((error) => {
+    throw new Error(`${label} 파일 요청에 실패했습니다. 경로: ${url}. ${error instanceof Error ? error.message : String(error)}`);
+  });
   if (!response.ok) {
     throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status}) 경로: ${url}`);
   }
@@ -43,7 +45,9 @@ async function fetchJson(path: string, label: string) {
 
 async function fetchText(path: string, label: string) {
   const url = clientContentPath(path);
-  const response = await fetch(url);
+  const response = await fetch(url).catch((error) => {
+    throw new Error(`${label} 파일 요청에 실패했습니다. 경로: ${url}. ${error instanceof Error ? error.message : String(error)}`);
+  });
   if (!response.ok) {
     throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status}) 경로: ${url}`);
   }

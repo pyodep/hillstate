@@ -108,6 +108,7 @@ jobs:
         run: |
           npm run build:electron
           npx electron-builder --win --x64 --publish never
+          npm run electron:validate:win
 
       - name: Upload Windows artifacts
         uses: actions/upload-artifact@v4

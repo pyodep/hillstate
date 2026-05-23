@@ -1,11 +1,24 @@
-const { app, BrowserWindow, Menu, net, protocol, shell } = require("electron");
+const { app, BrowserWindow, Menu, protocol, shell } = require("electron");
+const { readFile } = require("node:fs/promises");
 const path = require("node:path");
-const { pathToFileURL } = require("node:url");
 
 const isDev = Boolean(process.env.VITE_DEV_SERVER_URL);
 const appScheme = "hillstate";
 const appHost = "app";
 const distDir = path.join(__dirname, "../dist");
+
+const contentTypes = {
+  ".css": "text/css; charset=utf-8",
+  ".html": "text/html; charset=utf-8",
+  ".ico": "image/x-icon",
+  ".jpeg": "image/jpeg",
+  ".jpg": "image/jpeg",
+  ".js": "text/javascript; charset=utf-8",
+  ".json": "application/json; charset=utf-8",
+  ".png": "image/png",
+  ".svg": "image/svg+xml; charset=utf-8",
+  ".webp": "image/webp",
+};
 
 protocol.registerSchemesAsPrivileged([
   {
@@ -37,14 +50,25 @@ function resolveDistPath(requestUrl) {
 }
 
 function registerAppProtocol() {
-  protocol.handle(appScheme, (request) => {
+  protocol.handle(appScheme, async (request) => {
     const filePath = resolveDistPath(request.url);
 
     if (!filePath) {
       return new Response("Forbidden", { status: 403 });
     }
 
-    return net.fetch(pathToFileURL(filePath).toString());
+    try {
+      const body = await readFile(filePath);
+      const contentType = contentTypes[path.extname(filePath).toLowerCase()] ?? "application/octet-stream";
+      return new Response(body, {
+        headers: {
+          "content-type": contentType,
+        },
+      });
+    } catch (error) {
+      console.error(`Failed to serve ${request.url} from ${filePath}`, error);
+      return new Response("Not Found", { status: 404 });
+    }
   });
 }
 

@@ -19,9 +19,10 @@
     "electron:dist:mac": "npm run build:electron && electron-builder --mac --arm64",
     "electron:dist:mac:x64": "npm run build:electron && electron-builder --mac --x64",
     "electron:allow-local-mac": "node scripts/allow-local-mac-app.mjs",
-    "electron:dist:win": "npm run build:electron && electron-builder --win",
-    "electron:dist:win:portable": "npm run build:electron && electron-builder --win portable --x64",
-    "electron:dist:win:installer": "npm run build:electron && electron-builder --win nsis --x64"
+    "electron:validate:win": "node scripts/validate-electron-package.mjs release/win-unpacked/resources/app.asar",
+    "electron:dist:win": "npm run build:electron && electron-builder --win && npm run electron:validate:win",
+    "electron:dist:win:portable": "npm run build:electron && electron-builder --win portable --x64 && npm run electron:validate:win",
+    "electron:dist:win:installer": "npm run build:electron && electron-builder --win nsis --x64 && npm run electron:validate:win"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
