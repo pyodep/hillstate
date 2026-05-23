@@ -5,6 +5,7 @@ import sharp from "sharp";
 const rootDir = process.cwd();
 const clientDir = path.join(rootDir, "public/client");
 const datasetsDir = path.join(clientDir, "datasets");
+const sitePath = path.join(clientDir, "site.json");
 const unitTypesPath = path.join(datasetsDir, "unit-types.json");
 const unitTypesCsvPath = path.join(datasetsDir, "unit-types.csv");
 const floorplanSourceDir = path.join(rootDir, "datas/평면도 모음-260523");
@@ -14,6 +15,7 @@ const keymapTargetDir = path.join(clientDir, "keymaps");
 
 const floorplanMaxDimension = null;
 const keymapMaxDimension = null;
+const backgroundQuality = 96;
 
 function csvValue(value) {
   const text = value == null ? "" : String(value);
@@ -54,6 +56,7 @@ async function optimizeImage(sourcePath, targetPath, maxDimension, options) {
 }
 
 const unitTypes = JSON.parse(await readFile(unitTypesPath, "utf8"));
+const siteConfig = JSON.parse(await readFile(sitePath, "utf8"));
 const floorplanSources = await sourceFileMap(floorplanSourceDir);
 const keymapSources = await sourceFileMap(keymapSourceDir, "KEYMAP-");
 
@@ -99,6 +102,28 @@ for (const unitType of unitTypes) {
 }
 
 await writeFile(unitTypesPath, `${JSON.stringify(unitTypes, null, 2)}\n`);
+
+for (const [key, backgroundPath] of Object.entries(siteConfig.backgrounds ?? {})) {
+  if (!backgroundPath) continue;
+
+  const sourcePath = path.join(clientDir, backgroundPath);
+  const parsedPath = path.parse(backgroundPath);
+  const targetPath = path.join(parsedPath.dir, `${parsedPath.name}.webp`);
+  const absoluteTargetPath = path.join(clientDir, targetPath);
+
+  if (path.extname(backgroundPath).toLowerCase() !== ".webp") {
+    await sharp(sourcePath)
+      .webp({
+        effort: 6,
+        quality: backgroundQuality,
+        smartSubsample: true,
+      })
+      .toFile(absoluteTargetPath);
+    siteConfig.backgrounds[key] = targetPath;
+  }
+}
+
+await writeFile(sitePath, `${JSON.stringify(siteConfig, null, 2)}\n`);
 
 const csvHeaders = [
   "id",

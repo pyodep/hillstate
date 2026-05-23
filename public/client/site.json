@@ -29,8 +29,8 @@
     }
   ],
   "backgrounds": {
-    "main": "backgrounds/main.jpg",
-    "typeList": "backgrounds/type-list.jpg",
+    "main": "backgrounds/main.webp",
+    "typeList": "backgrounds/type-list.webp",
     "detail": ""
   },
   "cta": {
