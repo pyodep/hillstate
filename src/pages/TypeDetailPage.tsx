@@ -6,6 +6,7 @@ import type { TypeDetailLayoutConfig } from "../types/layout";
 import type { SiteConfig } from "../types/site";
 import type { UnitType } from "../types/unit";
 import { formatArea } from "../utils/formatArea";
+import { clientAssetPath } from "../utils/publicPath";
 
 type TypeDetailPageProps = {
   siteConfig: SiteConfig;
@@ -49,9 +50,19 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
     width: Math.round(floorPlanSourceSize.width * floorPlanScale),
     height: Math.round(floorPlanSourceSize.height * floorPlanScale),
   };
+  const typeSwitchLeft = layout.typeInfo.left + layout.typeInfo.width + 38;
 
   return (
-    <main className="screen detail-page" style={{ background: layout.background.color }}>
+    <main
+      className="screen detail-page"
+      style={
+        {
+          background: layout.background.color,
+          "--type-switch-left": `${typeSwitchLeft}px`,
+          "--type-switch-right": "76px",
+        } as React.CSSProperties
+      }
+    >
       <LogoGroup logos={siteConfig.detailLogos ?? siteConfig.logos} layout={layout.logoGroup} compact />
       <section
         className="keymap-panel"
@@ -101,8 +112,8 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
             "--floorplan-top": layout.floorPlan.top,
             "--floorplan-max-width": `${layout.floorPlan.maxWidth}px`,
             "--floorplan-max-height": `${layout.floorPlan.maxHeight}px`,
-            "--floorplan-width": `${floorPlanDisplaySize.width}px`,
-            "--floorplan-height": `${floorPlanDisplaySize.height}px`,
+            "--floorplan-render-width": `${floorPlanDisplaySize.width}px`,
+            "--floorplan-render-height": `${floorPlanDisplaySize.height}px`,
           } as React.CSSProperties
         }
       >
@@ -112,6 +123,8 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
             alt={`${unitType.label} 평면도`}
             className="floorplan-image"
             fallbackTitle="평면도 준비 중"
+            width={floorPlanSourceSize.width}
+            height={floorPlanSourceSize.height}
           />
         </div>
       </section>
@@ -135,6 +148,8 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
           <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
         </Link>
       ) : null}
+      {previousType?.images.floorPlan ? <img className="floorplan-preload" src={clientAssetPath(previousType.images.floorPlan)} alt="" aria-hidden="true" /> : null}
+      {nextType?.images.floorPlan ? <img className="floorplan-preload" src={clientAssetPath(nextType.images.floorPlan)} alt="" aria-hidden="true" /> : null}
       <Link
         className="type-list-return-link"
         to="/types"
