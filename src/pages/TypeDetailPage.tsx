@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { ChevronLeft, ChevronRight, Home } from "lucide-react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { LogoGroup } from "../components/LogoGroup";
@@ -24,6 +24,11 @@ const areaRows = [
 export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPageProps) {
   const { typeId } = useParams();
   const unitType = unitTypes.find((type) => type.id === typeId);
+  const visibleTypes = unitTypes.filter((type) => type.display.enabled);
+  const currentTypeIndex = visibleTypes.findIndex((type) => type.id === unitType?.id);
+  const hasTypeSwitch = visibleTypes.length > 1 && currentTypeIndex >= 0;
+  const previousType = hasTypeSwitch ? visibleTypes[(currentTypeIndex - 1 + visibleTypes.length) % visibleTypes.length] : undefined;
+  const nextType = hasTypeSwitch ? visibleTypes[(currentTypeIndex + 1) % visibleTypes.length] : undefined;
 
   if (!typeId) {
     return <Navigate to="/types" replace />;
@@ -88,14 +93,49 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
         }
       >
         <div className="floorplan-stage">
+          {previousType ? (
+            <Link
+              className="type-switch-link type-switch-prev"
+              to={`/types/${previousType.id}`}
+              aria-label={`${previousType.label} 타입으로 이동`}
+              title={`${previousType.label} 타입으로 이동`}
+            >
+              <ChevronLeft aria-hidden="true" size={54} strokeWidth={2.3} />
+            </Link>
+          ) : null}
           <ImageWithFallback
             src={unitType.images.floorPlan}
             alt={`${unitType.label} 평면도`}
             className="floorplan-image"
             fallbackTitle="평면도 준비 중"
           />
+          {nextType ? (
+            <Link
+              className="type-switch-link type-switch-next"
+              to={`/types/${nextType.id}`}
+              aria-label={`${nextType.label} 타입으로 이동`}
+              title={`${nextType.label} 타입으로 이동`}
+            >
+              <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
+            </Link>
+          ) : null}
         </div>
       </section>
+      <Link
+        className="type-list-return-link"
+        to="/types"
+        aria-label="타입별 세대 안내로 돌아가기"
+        title="타입별 세대 안내로 돌아가기"
+        style={
+          {
+            "--home-right": `${layout.homeButton.right}px`,
+            "--home-bottom": `${layout.homeButton.bottom}px`,
+            "--home-size": `${layout.homeButton.size}px`,
+          } as React.CSSProperties
+        }
+      >
+        <ChevronLeft aria-hidden="true" size={48} strokeWidth={2.6} />
+      </Link>
       <Link
         className="home-link"
         to="/"

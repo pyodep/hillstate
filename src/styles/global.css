@@ -344,6 +344,34 @@ a {
   height: min(var(--floorplan-max-height), 78vh);
 }
 
+.type-switch-link {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: grid;
+  width: 58px;
+  height: 78px;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.96);
+  background: transparent;
+  filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.32));
+  transform: translateY(-50%);
+}
+
+.type-switch-prev {
+  left: -76px;
+}
+
+.type-switch-next {
+  right: -76px;
+}
+
+.type-switch-link:hover,
+.type-switch-link:focus-visible {
+  color: #fff;
+  opacity: 0.72;
+}
+
 .floorplan-image {
   width: auto;
   height: min(var(--floorplan-max-height), 78vh);
@@ -381,9 +409,9 @@ a {
   font-size: 15px;
 }
 
-.home-link {
+.home-link,
+.type-list-return-link {
   position: absolute;
-  right: var(--home-right);
   bottom: var(--home-bottom);
   z-index: 8;
   display: grid;
@@ -397,8 +425,18 @@ a {
   box-shadow: none;
 }
 
+.home-link {
+  right: var(--home-right);
+}
+
+.type-list-return-link {
+  right: calc(var(--home-right) + var(--home-size) + 14px);
+}
+
 .home-link:hover,
-.home-link:focus-visible {
+.home-link:focus-visible,
+.type-list-return-link:hover,
+.type-list-return-link:focus-visible {
   opacity: 0.72;
 }
 
@@ -440,6 +478,14 @@ a {
   .floorplan-panel {
     left: 62%;
     width: 42vw;
+  }
+
+  .type-switch-prev {
+    left: -56px;
+  }
+
+  .type-switch-next {
+    right: -56px;
   }
 }
 
