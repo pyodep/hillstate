@@ -22,17 +22,25 @@
 
 ```json
 {
-  "floorPlan": "floorplans/34A.png",
+  "floorPlan": "floorplans/34A.webp",
   "floorPlanSize": {
     "width": 1254,
     "height": 2646
   },
-  "keyMap": "keymaps/34A.png"
+  "keyMap": "keymaps/34A.webp"
 }
 ```
 
-예를 들어 `floorplans/59A.png` 파일을 추가했다면 `unit-types.json`에는 `"floorPlan": "floorplans/59A.png"`라고 적습니다.
+예를 들어 `floorplans/59A.webp` 파일을 추가했다면 `unit-types.json`에는 `"floorPlan": "floorplans/59A.webp"`라고 적습니다.
 평면도 크기가 화면에서 흔들리지 않도록 `floorPlanSize`에는 이미지의 실제 픽셀 너비와 높이를 적습니다. CSV를 수정할 때는 `floorPlanWidth`, `floorPlanHeight` 열을 같은 값으로 맞추면 됩니다.
+
+## 이미지 최적화
+
+웹과 앱 로딩 속도를 위해 평면도와 키맵은 원본 해상도를 유지한 고품질 WebP로 사용합니다. 원본 이미지는 `datas` 폴더에 두고 프로젝트 루트에서 아래 명령을 실행하면 서비스용 이미지와 데이터셋이 같이 갱신됩니다.
+
+```bash
+npm run optimize:images
+```
 
 ## CSV 사용
 

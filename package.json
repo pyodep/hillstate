@@ -10,6 +10,7 @@
     "dev": "vite",
     "build": "tsc && vite build && node scripts/copy-404.mjs",
     "build:electron": "tsc && cross-env BASE_PATH=./ vite build",
+    "optimize:images": "node scripts/optimize-client-images.mjs",
     "preview": "vite preview",
     "electron:dev": "concurrently -k \"npm:dev\" \"wait-on http://127.0.0.1:5173 && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5173 electron electron/main.cjs\"",
     "electron:pack": "npm run build:electron && electron-builder --dir",
@@ -38,6 +39,7 @@
     "cross-env": "^10.1.0",
     "electron": "^42.2.0",
     "electron-builder": "^26.8.1",
+    "sharp": "^0.34.5",
     "typescript": "^5.6.3",
     "vite": "^5.4.11",
     "wait-on": "^9.0.10"
