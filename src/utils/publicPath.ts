@@ -1,5 +1,15 @@
 const CLIENT_ROOT = "client";
 const externalUrlPattern = /^(https?:)?\/\//;
+const contentVersion = import.meta.env.VITE_CONTENT_VERSION;
+
+function appendContentVersion(path: string) {
+  if (!contentVersion) {
+    return path;
+  }
+
+  const separator = path.includes("?") ? "&" : "?";
+  return `${path}${separator}v=${encodeURIComponent(contentVersion)}`;
+}
 
 export function publicPath(path?: string) {
   if (!path) {
@@ -21,7 +31,7 @@ export function publicPath(path?: string) {
 }
 
 export function clientContentPath(path: string) {
-  return publicPath(`${CLIENT_ROOT}/${path.replace(/^\/+/, "")}`);
+  return appendContentVersion(publicPath(`${CLIENT_ROOT}/${path.replace(/^\/+/, "")}`));
 }
 
 export function clientAssetPath(path?: string) {
@@ -34,7 +44,7 @@ export function clientAssetPath(path?: string) {
   }
 
   if (path.startsWith("/")) {
-    return publicPath(path);
+    return appendContentVersion(publicPath(path));
   }
 
   return clientContentPath(path);

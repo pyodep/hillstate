@@ -37,6 +37,7 @@ jobs:
           else
             echo "BASE_PATH=/${{ github.event.repository.name }}/" >> "$GITHUB_ENV"
           fi
+          echo "VITE_CONTENT_VERSION=${{ github.sha }}" >> "$GITHUB_ENV"
 
       - name: Build
         run: npm run build
