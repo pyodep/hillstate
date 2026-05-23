@@ -23,7 +23,11 @@ function assertEntry(entries, filePath) {
     fail(`${normalizedPath} 파일이 패키지에 없습니다.`);
   }
 
-  const content = asar.extractFile(archivePath, normalizedPath);
+  // asar resolves entries by splitting on path.sep internally, so a POSIX-style
+  // ("/") path with nested folders fails to resolve on Windows. Hand extractFile
+  // an OS-native path while keeping the "/" form for the entries lookup above.
+  const archivePathForAsar = normalizedPath.split("/").join(path.sep);
+  const content = asar.extractFile(archivePath, archivePathForAsar);
   if (!content || content.length === 0) {
     fail(`${normalizedPath} 파일이 비어 있습니다.`);
   }
