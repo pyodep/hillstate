@@ -283,12 +283,12 @@ a {
 .keymap-image,
 .keymap-panel .image-fallback {
   display: block;
-  width: calc(var(--keymap-width) - 30px);
+  width: calc(var(--keymap-width) - 39px);
   height: var(--keymap-height);
   margin-right: auto;
   margin-left: auto;
   object-fit: contain;
-  transform: translateX(7px);
+  transform: translateX(9px);
 }
 
 .type-info {

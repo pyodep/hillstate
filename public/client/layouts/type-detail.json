@@ -11,14 +11,14 @@
     "height": 60
   },
   "keyMap": {
-    "left": 63,
+    "left": 31,
     "top": 98,
-    "width": 214,
-    "height": 128
+    "width": 278,
+    "height": 166
   },
   "typeInfo": {
     "left": 63,
-    "top": 314,
+    "top": 350,
     "width": 214,
     "typeFontSize": 86,
     "labelFontSize": 22,
