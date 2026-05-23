@@ -14,7 +14,11 @@
     "electron:dev": "concurrently -k \"npm:dev\" \"wait-on http://127.0.0.1:5173 && cross-env VITE_DEV_SERVER_URL=http://127.0.0.1:5173 electron electron/main.cjs\"",
     "electron:pack": "npm run build:electron && electron-builder --dir",
     "electron:dist": "npm run build:electron && electron-builder",
-    "electron:dist:win": "npm run build:electron && electron-builder --win portable --x64",
+    "electron:dist:all": "npm run electron:dist:mac && npm run electron:dist:win",
+    "electron:dist:mac": "npm run build:electron && electron-builder --mac --arm64",
+    "electron:dist:mac:x64": "npm run build:electron && electron-builder --mac --x64",
+    "electron:dist:win": "npm run build:electron && electron-builder --win",
+    "electron:dist:win:portable": "npm run build:electron && electron-builder --win portable --x64",
     "electron:dist:win:installer": "npm run build:electron && electron-builder --win nsis --x64"
   },
   "dependencies": {
@@ -37,49 +41,5 @@
     "typescript": "^5.6.3",
     "vite": "^5.4.11",
     "wait-on": "^9.0.10"
-  },
-  "build": {
-    "appId": "com.hillstate.songpa-the-grid",
-    "productName": "Hillstate Songpa The Grid",
-    "directories": {
-      "output": "release"
-    },
-    "files": [
-      "dist/**/*",
-      "electron/**/*",
-      "package.json"
-    ],
-    "asar": true,
-    "artifactName": "${productName}-${version}-${os}-${arch}.${ext}",
-    "mac": {
-      "target": "dmg",
-      "category": "public.app-category.business"
-    },
-    "win": {
-      "target": [
-        {
-          "target": "nsis",
-          "arch": [
-            "x64"
-          ]
-        },
-        {
-          "target": "portable",
-          "arch": [
-            "x64"
-          ]
-        }
-      ]
-    },
-    "nsis": {
-      "artifactName": "${productName}-${version}-${os}-${arch}-setup.${ext}",
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true,
-      "createDesktopShortcut": true,
-      "createStartMenuShortcut": true
-    },
-    "portable": {
-      "artifactName": "${productName}-${version}-${os}-${arch}-portable.${ext}"
-    }
   }
 }

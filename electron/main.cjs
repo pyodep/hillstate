@@ -1,7 +1,52 @@
-const { app, BrowserWindow, shell } = require("electron");
+const { app, BrowserWindow, Menu, net, protocol, shell } = require("electron");
 const path = require("node:path");
+const { pathToFileURL } = require("node:url");
 
 const isDev = Boolean(process.env.VITE_DEV_SERVER_URL);
+const appScheme = "hillstate";
+const appHost = "app";
+const distDir = path.join(__dirname, "../dist");
+
+protocol.registerSchemesAsPrivileged([
+  {
+    scheme: appScheme,
+    privileges: {
+      standard: true,
+      secure: true,
+      supportFetchAPI: true,
+      corsEnabled: true,
+    },
+  },
+]);
+
+function resolveDistPath(requestUrl) {
+  const url = new URL(requestUrl);
+  let pathname = decodeURIComponent(url.pathname);
+
+  if (pathname === "/" || pathname === "") {
+    pathname = "/index.html";
+  }
+
+  const filePath = path.normalize(path.join(distDir, pathname));
+
+  if (filePath !== distDir && !filePath.startsWith(`${distDir}${path.sep}`)) {
+    return null;
+  }
+
+  return filePath;
+}
+
+function registerAppProtocol() {
+  protocol.handle(appScheme, (request) => {
+    const filePath = resolveDistPath(request.url);
+
+    if (!filePath) {
+      return new Response("Forbidden", { status: 403 });
+    }
+
+    return net.fetch(pathToFileURL(filePath).toString());
+  });
+}
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -20,8 +65,21 @@ function createWindow() {
   });
 
   win.webContents.setWindowOpenHandler(({ url }) => {
-    shell.openExternal(url);
+    if (/^https?:\/\//.test(url)) {
+      shell.openExternal(url);
+    }
+
     return { action: "deny" };
+  });
+
+  win.webContents.on("will-navigate", (event, url) => {
+    const parsedUrl = new URL(url);
+    const isInternalUrl = isDev ? url.startsWith(process.env.VITE_DEV_SERVER_URL) : parsedUrl.protocol === `${appScheme}:`;
+
+    if (!isInternalUrl) {
+      event.preventDefault();
+      shell.openExternal(url);
+    }
   });
 
   if (isDev) {
@@ -29,10 +87,13 @@ function createWindow() {
     return;
   }
 
-  win.loadFile(path.join(__dirname, "../dist/index.html"));
+  win.loadURL(`${appScheme}://${appHost}/index.html`);
 }
 
 app.whenReady().then(() => {
+  Menu.setApplicationMenu(null);
+  app.setName("힐스테이트 송파더그리드");
+  registerAppProtocol();
   createWindow();
 
   app.on("activate", () => {

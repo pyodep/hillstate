@@ -9,6 +9,29 @@ npm install
 npm run dev
 ```
 
+## Electron 실행 및 빌드
+
+개발 중 Electron 앱으로 확인할 때는 아래 명령을 사용합니다.
+
+```bash
+npm run electron:dev
+```
+
+배포용 실행 파일은 `release` 폴더에 생성됩니다.
+
+```bash
+# Mac용 DMG 생성
+npm run electron:dist:mac
+
+# Windows용 설치 파일과 portable exe 생성
+npm run electron:dist:win
+
+# Mac + Windows를 한 번에 생성
+npm run electron:dist:all
+```
+
+Windows 결과물은 `Hillstate Songpa The Grid-버전-win-x64-setup.exe`와 `Hillstate Songpa The Grid-버전-win-x64-portable.exe`입니다. Mac 결과물은 `Hillstate Songpa The Grid-버전-mac-아키텍처.dmg`입니다.
+
 ## 클라이언트 수정 폴더
 
 운영자가 직접 수정하는 파일과 이미지는 `public/client`만 보면 됩니다.
