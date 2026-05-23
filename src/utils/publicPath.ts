@@ -2,6 +2,20 @@ const CLIENT_ROOT = "client";
 const externalUrlPattern = /^(https?:)?\/\//;
 const contentVersion = import.meta.env.VITE_CONTENT_VERSION;
 
+function isExternalPath(path: string) {
+  return externalUrlPattern.test(path) || path.startsWith("data:") || path.startsWith("blob:");
+}
+
+function normalizeClientRelativePath(path: string) {
+  let cleanPath = path.trim().replace(/\\/g, "/").replace(/^\/+/, "");
+
+  if (cleanPath === CLIENT_ROOT || cleanPath.startsWith(`${CLIENT_ROOT}/`)) {
+    cleanPath = cleanPath.slice(CLIENT_ROOT.length).replace(/^\/+/, "");
+  }
+
+  return cleanPath;
+}
+
 function appendContentVersion(path: string) {
   if (!contentVersion) {
     return path;
@@ -16,7 +30,7 @@ export function publicPath(path?: string) {
     return "";
   }
 
-  if (externalUrlPattern.test(path) || path.startsWith("data:") || path.startsWith("blob:")) {
+  if (isExternalPath(path)) {
     return path;
   }
 
@@ -31,7 +45,7 @@ export function publicPath(path?: string) {
 }
 
 export function clientContentPath(path: string) {
-  return appendContentVersion(publicPath(`${CLIENT_ROOT}/${path.replace(/^\/+/, "")}`));
+  return appendContentVersion(publicPath(`${CLIENT_ROOT}/${normalizeClientRelativePath(path)}`));
 }
 
 export function clientAssetPath(path?: string) {
@@ -39,12 +53,8 @@ export function clientAssetPath(path?: string) {
     return "";
   }
 
-  if (externalUrlPattern.test(path) || path.startsWith("data:") || path.startsWith("blob:")) {
+  if (isExternalPath(path)) {
     return path;
-  }
-
-  if (path.startsWith("/")) {
-    return appendContentVersion(publicPath(path));
   }
 
   return clientContentPath(path);

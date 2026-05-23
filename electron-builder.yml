@@ -10,9 +10,15 @@ asar: true
 artifactName: ${productName}-${version}-${os}-${arch}.${ext}
 mac:
   category: public.app-category.business
+  hardenedRuntime: true
+  gatekeeperAssess: false
+  entitlements: build/entitlements.mac.plist
+  entitlementsInherit: build/entitlements.mac.inherit.plist
+  notarize: true
   target: dmg
 dmg:
   artifactName: ${productName}-${version}-${os}-${arch}.${ext}
+  sign: false
 win:
   target:
     - target: nsis

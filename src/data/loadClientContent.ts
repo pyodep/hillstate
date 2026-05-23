@@ -33,17 +33,19 @@ export type ClientContentData = {
 };
 
 async function fetchJson(path: string, label: string) {
-  const response = await fetch(clientContentPath(path));
+  const url = clientContentPath(path);
+  const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status})`);
+    throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status}) 경로: ${url}`);
   }
   return response.json();
 }
 
 async function fetchText(path: string, label: string) {
-  const response = await fetch(clientContentPath(path));
+  const url = clientContentPath(path);
+  const response = await fetch(url);
   if (!response.ok) {
-    throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status})`);
+    throw new Error(`${label} 파일을 불러오지 못했습니다. (${response.status}) 경로: ${url}`);
   }
   return response.text();
 }

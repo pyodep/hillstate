@@ -32,6 +32,26 @@ npm run electron:dist:all
 
 Windows 결과물은 `Hillstate Songpa The Grid-버전-win-x64-setup.exe`와 `Hillstate Songpa The Grid-버전-win-x64-portable.exe`입니다. Mac 결과물은 `Hillstate Songpa The Grid-버전-mac-아키텍처.dmg`입니다.
 
+### macOS에서 "열지 않음" 경고가 뜰 때
+
+로컬 테스트용 DMG는 Apple Developer ID 공증이 없으면 macOS Gatekeeper가 차단할 수 있습니다. 내 Mac에서만 바로 확인할 때는 앱을 `Applications`에 복사한 뒤 아래 명령으로 quarantine을 제거합니다.
+
+```bash
+npm run electron:allow-local-mac
+```
+
+클라이언트에게 전달할 macOS DMG는 Apple Developer ID 서명과 notarization이 필요합니다. GitHub Actions에서 공증된 DMG를 만들려면 저장소 `Settings` → `Secrets and variables` → `Actions`에 아래 값을 등록합니다.
+
+```txt
+MACOS_CERTIFICATE
+MACOS_CERTIFICATE_PASSWORD
+APPLE_API_KEY
+APPLE_API_KEY_ID
+APPLE_API_ISSUER
+```
+
+`MACOS_CERTIFICATE`는 Developer ID Application 인증서를 `.p12`로 내보낸 뒤 base64로 인코딩한 값입니다.
+
 ## GitHub에서 앱 빌드
 
 `.github/workflows/build-electron.yml`이 Mac/Windows 앱 빌드를 담당합니다.
