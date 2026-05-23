@@ -50,7 +50,7 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
     width: Math.round(floorPlanSourceSize.width * floorPlanScale),
     height: Math.round(floorPlanSourceSize.height * floorPlanScale),
   };
-  const typeSwitchLeft = layout.typeInfo.left + layout.typeInfo.width + 39;
+  const typeSwitchLeft = layout.typeInfo.left + layout.typeInfo.width + 59;
 
   return (
     <main
