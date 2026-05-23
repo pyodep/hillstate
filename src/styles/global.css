@@ -359,11 +359,11 @@ a {
 }
 
 .type-switch-prev {
-  left: -76px;
+  left: -118px;
 }
 
 .type-switch-next {
-  right: -76px;
+  right: -118px;
 }
 
 .type-switch-link:hover,
@@ -481,11 +481,11 @@ a {
   }
 
   .type-switch-prev {
-    left: -56px;
+    left: -78px;
   }
 
   .type-switch-next {
-    right: -56px;
+    right: -78px;
   }
 }
 

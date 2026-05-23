@@ -107,7 +107,7 @@ public/client/
 
 파일을 같은 이름으로 교체하면 JSON 수정 없이 반영됩니다. 새 파일명으로 추가할 때는 `site.json` 또는 `unit-types.json`의 경로도 같이 바꿉니다.
 
-현재 프로토타입은 34A 평면도와 키맵만 실제 이미지가 연결되어 있으며, 나머지 타입은 상세 화면에서 준비 중 fallback을 표시합니다.
+현재 프로토타입은 전체 타입 평면도를 `public/client/floorplans`에 연결해두었고, 키맵은 34A만 실제 이미지가 연결되어 있습니다.
 
 ## GitHub Pages 배포
 

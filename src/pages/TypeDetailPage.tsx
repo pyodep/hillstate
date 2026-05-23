@@ -92,34 +92,34 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
           } as React.CSSProperties
         }
       >
+        {previousType ? (
+          <Link
+            className="type-switch-link type-switch-prev"
+            to={`/types/${previousType.id}`}
+            aria-label={`${previousType.label} 타입으로 이동`}
+            title={`${previousType.label} 타입으로 이동`}
+          >
+            <ChevronLeft aria-hidden="true" size={54} strokeWidth={2.3} />
+          </Link>
+        ) : null}
         <div className="floorplan-stage">
-          {previousType ? (
-            <Link
-              className="type-switch-link type-switch-prev"
-              to={`/types/${previousType.id}`}
-              aria-label={`${previousType.label} 타입으로 이동`}
-              title={`${previousType.label} 타입으로 이동`}
-            >
-              <ChevronLeft aria-hidden="true" size={54} strokeWidth={2.3} />
-            </Link>
-          ) : null}
           <ImageWithFallback
             src={unitType.images.floorPlan}
             alt={`${unitType.label} 평면도`}
             className="floorplan-image"
             fallbackTitle="평면도 준비 중"
           />
-          {nextType ? (
-            <Link
-              className="type-switch-link type-switch-next"
-              to={`/types/${nextType.id}`}
-              aria-label={`${nextType.label} 타입으로 이동`}
-              title={`${nextType.label} 타입으로 이동`}
-            >
-              <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
-            </Link>
-          ) : null}
         </div>
+        {nextType ? (
+          <Link
+            className="type-switch-link type-switch-next"
+            to={`/types/${nextType.id}`}
+            aria-label={`${nextType.label} 타입으로 이동`}
+            title={`${nextType.label} 타입으로 이동`}
+          >
+            <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
+          </Link>
+        ) : null}
       </section>
       <Link
         className="type-list-return-link"
