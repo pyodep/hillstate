@@ -51,6 +51,7 @@ APPLE_API_ISSUER
 ```
 
 `MACOS_CERTIFICATE`는 Developer ID Application 인증서를 `.p12`로 내보낸 뒤 base64로 인코딩한 값입니다.
+위 secrets를 등록하지 않아도 GitHub Actions의 macOS 빌드는 완료되지만, 그 결과물은 unsigned DMG라서 Gatekeeper 경고가 뜰 수 있습니다.
 
 ## GitHub에서 앱 빌드
 
