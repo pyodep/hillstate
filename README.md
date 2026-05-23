@@ -32,6 +32,17 @@ npm run electron:dist:all
 
 Windows 결과물은 `Hillstate Songpa The Grid-버전-win-x64-setup.exe`와 `Hillstate Songpa The Grid-버전-win-x64-portable.exe`입니다. Mac 결과물은 `Hillstate Songpa The Grid-버전-mac-아키텍처.dmg`입니다.
 
+## GitHub에서 앱 빌드
+
+`.github/workflows/build-electron.yml`이 Mac/Windows 앱 빌드를 담당합니다.
+
+1. GitHub 저장소의 `Actions` 탭으로 이동합니다.
+2. `Build Electron Apps` 워크플로를 선택합니다.
+3. `Run workflow` 버튼으로 실행합니다.
+4. 완료 후 실행 결과 화면의 `Artifacts`에서 `hillstate-macos-dmg`, `hillstate-windows-exe`를 내려받습니다.
+
+`v0.1.0`처럼 `v*.*.*` 형식의 태그를 push해도 같은 빌드가 자동 실행됩니다.
+
 ## 클라이언트 수정 폴더
 
 운영자가 직접 수정하는 파일과 이미지는 `public/client`만 보면 됩니다.
