@@ -276,9 +276,11 @@ a {
 
 .keymap-image,
 .keymap-panel .image-fallback {
+  display: block;
   width: calc(var(--keymap-width) - 30px);
   height: var(--keymap-height);
-  margin-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
   object-fit: contain;
 }
 
@@ -291,16 +293,19 @@ a {
 }
 
 .type-info h1 {
-  margin: 0 0 22px 27px;
+  width: 100%;
+  margin: 0 0 26px;
   color: #fff;
   font-size: var(--type-font-size);
   font-weight: 900;
   line-height: 0.98;
+  text-align: center;
 }
 
 .type-info dl {
   display: grid;
   margin: 0;
+  padding: 10px 0 12px;
   border-top: 2px solid rgba(255, 255, 255, 0.9);
   border-bottom: 2px solid rgba(255, 255, 255, 0.9);
 }
