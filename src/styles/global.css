@@ -143,10 +143,12 @@ a {
   top: var(--cta-top);
   left: 50%;
   z-index: 2;
-  display: grid;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: var(--cta-width);
   height: var(--cta-height);
-  place-items: center;
   border: 2px solid rgba(255, 255, 255, 0.85);
   border-radius: var(--button-radius);
   color: #fff;
@@ -164,6 +166,10 @@ a {
 .main-cta:focus-visible {
   background: linear-gradient(180deg, #cc2a37, #9c1824);
   transform: translateX(-50%) translateY(-2px);
+}
+
+.main-cta svg {
+  flex: 0 0 auto;
 }
 
 .back-link {
@@ -338,8 +344,8 @@ a {
   left: var(--floorplan-left);
   z-index: 2;
   display: grid;
-  width: min(var(--floorplan-max-width), 58vw);
-  height: min(var(--floorplan-max-height), 78vh);
+  width: min(var(--floorplan-max-width), 70vw);
+  height: min(var(--floorplan-max-height), 88vh);
   place-items: center;
   transform: translate(-50%, -50%);
 }
@@ -494,7 +500,7 @@ a {
 
   .floorplan-panel {
     left: 62%;
-    width: 52vw;
+    width: 58vw;
   }
 
   .type-switch-prev {
@@ -502,7 +508,7 @@ a {
   }
 
   .type-switch-next {
-    right: 54px;
+    right: 22px;
   }
 }
 

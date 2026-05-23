@@ -1,3 +1,4 @@
+import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { BackgroundLayout } from "../components/BackgroundLayout";
 import { LogoGroup } from "../components/LogoGroup";
@@ -39,7 +40,8 @@ export function MainPage({ siteConfig, layout }: MainPageProps) {
           } as React.CSSProperties
         }
       >
-        {siteConfig.cta.label}
+        <span>{siteConfig.cta.label}</span>
+        <ChevronRight aria-hidden="true" size={38} strokeWidth={2.8} />
       </Link>
     </BackgroundLayout>
   );

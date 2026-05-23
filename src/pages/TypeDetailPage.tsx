@@ -50,7 +50,7 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
     width: Math.round(floorPlanSourceSize.width * floorPlanScale),
     height: Math.round(floorPlanSourceSize.height * floorPlanScale),
   };
-  const typeSwitchLeft = layout.typeInfo.left + layout.typeInfo.width + 38;
+  const typeSwitchLeft = layout.typeInfo.left + layout.typeInfo.width + 23;
 
   return (
     <main
@@ -59,7 +59,7 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
         {
           background: layout.background.color,
           "--type-switch-left": `${typeSwitchLeft}px`,
-          "--type-switch-right": "76px",
+          "--type-switch-right": "22px",
         } as React.CSSProperties
       }
     >
