@@ -10,6 +10,10 @@ export type UnitType = {
   };
   images: {
     floorPlan: string;
+    floorPlanSize?: {
+      width: number;
+      height: number;
+    };
     keyMap: string;
   };
   display: {

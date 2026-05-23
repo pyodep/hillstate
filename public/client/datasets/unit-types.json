@@ -11,7 +11,11 @@
     },
     "images": {
       "floorPlan": "floorplans/34A.png",
-      "keyMap": "keymaps/34A.png"
+      "keyMap": "keymaps/34A.png",
+      "floorPlanSize": {
+        "width": 1254,
+        "height": 2646
+      }
     },
     "display": {
       "enabled": true,
@@ -31,7 +35,11 @@
     },
     "images": {
       "floorPlan": "floorplans/34B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1428,
+        "height": 2648
+      }
     },
     "display": {
       "enabled": true,
@@ -51,7 +59,11 @@
     },
     "images": {
       "floorPlan": "floorplans/36.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2753,
+        "height": 1412
+      }
     },
     "display": {
       "enabled": true,
@@ -71,7 +83,11 @@
     },
     "images": {
       "floorPlan": "floorplans/42A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1788,
+        "height": 2163
+      }
     },
     "display": {
       "enabled": true,
@@ -91,7 +107,11 @@
     },
     "images": {
       "floorPlan": "floorplans/42B1.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1664,
+        "height": 2500
+      }
     },
     "display": {
       "enabled": true,
@@ -111,7 +131,11 @@
     },
     "images": {
       "floorPlan": "floorplans/42B2.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1528,
+        "height": 2502
+      }
     },
     "display": {
       "enabled": true,
@@ -131,7 +155,11 @@
     },
     "images": {
       "floorPlan": "floorplans/42C1.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1695,
+        "height": 2504
+      }
     },
     "display": {
       "enabled": true,
@@ -151,7 +179,11 @@
     },
     "images": {
       "floorPlan": "floorplans/42C2.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2526,
+        "height": 1712
+      }
     },
     "display": {
       "enabled": true,
@@ -171,7 +203,11 @@
     },
     "images": {
       "floorPlan": "floorplans/48.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2754,
+        "height": 1712
+      }
     },
     "display": {
       "enabled": true,
@@ -191,7 +227,11 @@
     },
     "images": {
       "floorPlan": "floorplans/50A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1769,
+        "height": 2411
+      }
     },
     "display": {
       "enabled": true,
@@ -211,7 +251,11 @@
     },
     "images": {
       "floorPlan": "floorplans/50B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1610,
+        "height": 2504
+      }
     },
     "display": {
       "enabled": true,
@@ -231,7 +275,11 @@
     },
     "images": {
       "floorPlan": "floorplans/50C.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1836,
+        "height": 2505
+      }
     },
     "display": {
       "enabled": true,
@@ -251,7 +299,11 @@
     },
     "images": {
       "floorPlan": "floorplans/52.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1809,
+        "height": 2506
+      }
     },
     "display": {
       "enabled": true,
@@ -271,7 +323,11 @@
     },
     "images": {
       "floorPlan": "floorplans/54A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1880,
+        "height": 2503
+      }
     },
     "display": {
       "enabled": true,
@@ -291,7 +347,11 @@
     },
     "images": {
       "floorPlan": "floorplans/54B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2171,
+        "height": 2052
+      }
     },
     "display": {
       "enabled": true,
@@ -311,7 +371,11 @@
     },
     "images": {
       "floorPlan": "floorplans/55A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2126,
+        "height": 2504
+      }
     },
     "display": {
       "enabled": true,
@@ -331,7 +395,11 @@
     },
     "images": {
       "floorPlan": "floorplans/55B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1989,
+        "height": 2162
+      }
     },
     "display": {
       "enabled": true,
@@ -351,7 +419,11 @@
     },
     "images": {
       "floorPlan": "floorplans/57.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2505,
+        "height": 2491
+      }
     },
     "display": {
       "enabled": true,
@@ -371,7 +443,11 @@
     },
     "images": {
       "floorPlan": "floorplans/58A1.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 1698,
+        "height": 3164
+      }
     },
     "display": {
       "enabled": true,
@@ -391,7 +467,11 @@
     },
     "images": {
       "floorPlan": "floorplans/58A2.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3163,
+        "height": 1711
+      }
     },
     "display": {
       "enabled": true,
@@ -411,7 +491,11 @@
     },
     "images": {
       "floorPlan": "floorplans/59A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2164,
+        "height": 2218
+      }
     },
     "display": {
       "enabled": true,
@@ -431,7 +515,11 @@
     },
     "images": {
       "floorPlan": "floorplans/59B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2434,
+        "height": 1930
+      }
     },
     "display": {
       "enabled": true,
@@ -451,7 +539,11 @@
     },
     "images": {
       "floorPlan": "floorplans/60.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2138,
+        "height": 2265
+      }
     },
     "display": {
       "enabled": true,
@@ -471,7 +563,11 @@
     },
     "images": {
       "floorPlan": "floorplans/61.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2095,
+        "height": 2147
+      }
     },
     "display": {
       "enabled": true,
@@ -491,7 +587,11 @@
     },
     "images": {
       "floorPlan": "floorplans/62.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2470,
+        "height": 2649
+      }
     },
     "display": {
       "enabled": true,
@@ -511,7 +611,11 @@
     },
     "images": {
       "floorPlan": "floorplans/75.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2841,
+        "height": 2011
+      }
     },
     "display": {
       "enabled": true,
@@ -531,7 +635,11 @@
     },
     "images": {
       "floorPlan": "floorplans/78.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2165,
+        "height": 2782
+      }
     },
     "display": {
       "enabled": true,
@@ -551,7 +659,11 @@
     },
     "images": {
       "floorPlan": "floorplans/79.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2192,
+        "height": 2894
+      }
     },
     "display": {
       "enabled": true,
@@ -571,7 +683,11 @@
     },
     "images": {
       "floorPlan": "floorplans/82.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2948,
+        "height": 2212
+      }
     },
     "display": {
       "enabled": true,
@@ -591,7 +707,11 @@
     },
     "images": {
       "floorPlan": "floorplans/84.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2616,
+        "height": 2430
+      }
     },
     "display": {
       "enabled": true,
@@ -611,7 +731,11 @@
     },
     "images": {
       "floorPlan": "floorplans/88.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2676,
+        "height": 3138
+      }
     },
     "display": {
       "enabled": true,
@@ -631,7 +755,11 @@
     },
     "images": {
       "floorPlan": "floorplans/89.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2215,
+        "height": 3081
+      }
     },
     "display": {
       "enabled": true,
@@ -651,7 +779,11 @@
     },
     "images": {
       "floorPlan": "floorplans/91.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2618,
+        "height": 2640
+      }
     },
     "display": {
       "enabled": true,
@@ -671,7 +803,11 @@
     },
     "images": {
       "floorPlan": "floorplans/95.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2907,
+        "height": 2274
+      }
     },
     "display": {
       "enabled": true,
@@ -691,7 +827,11 @@
     },
     "images": {
       "floorPlan": "floorplans/96A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2887,
+        "height": 2335
+      }
     },
     "display": {
       "enabled": true,
@@ -711,7 +851,11 @@
     },
     "images": {
       "floorPlan": "floorplans/96B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2433,
+        "height": 2805
+      }
     },
     "display": {
       "enabled": true,
@@ -731,7 +875,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2460,
+        "height": 2956
+      }
     },
     "display": {
       "enabled": true,
@@ -751,7 +899,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2908,
+        "height": 2624
+      }
     },
     "display": {
       "enabled": true,
@@ -771,7 +923,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98C.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3678,
+        "height": 2077
+      }
     },
     "display": {
       "enabled": true,
@@ -791,7 +947,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98D.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2432,
+        "height": 2916
+      }
     },
     "display": {
       "enabled": true,
@@ -811,7 +971,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98E.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2616,
+        "height": 2787
+      }
     },
     "display": {
       "enabled": true,
@@ -831,7 +995,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98F.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2615,
+        "height": 2787
+      }
     },
     "display": {
       "enabled": true,
@@ -851,7 +1019,11 @@
     },
     "images": {
       "floorPlan": "floorplans/98G.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2649,
+        "height": 2568
+      }
     },
     "display": {
       "enabled": true,
@@ -871,7 +1043,11 @@
     },
     "images": {
       "floorPlan": "floorplans/99A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3235,
+        "height": 2036
+      }
     },
     "display": {
       "enabled": true,
@@ -891,7 +1067,11 @@
     },
     "images": {
       "floorPlan": "floorplans/99B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2432,
+        "height": 2882
+      }
     },
     "display": {
       "enabled": true,
@@ -911,7 +1091,11 @@
     },
     "images": {
       "floorPlan": "floorplans/100A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2433,
+        "height": 2916
+      }
     },
     "display": {
       "enabled": true,
@@ -931,7 +1115,11 @@
     },
     "images": {
       "floorPlan": "floorplans/100B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2988,
+        "height": 2437
+      }
     },
     "display": {
       "enabled": true,
@@ -951,7 +1139,11 @@
     },
     "images": {
       "floorPlan": "floorplans/104.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2272,
+        "height": 3216
+      }
     },
     "display": {
       "enabled": true,
@@ -971,7 +1163,11 @@
     },
     "images": {
       "floorPlan": "floorplans/105A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3046,
+        "height": 2468
+      }
     },
     "display": {
       "enabled": true,
@@ -991,7 +1187,11 @@
     },
     "images": {
       "floorPlan": "floorplans/105B.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2280,
+        "height": 3234
+      }
     },
     "display": {
       "enabled": true,
@@ -1011,7 +1211,11 @@
     },
     "images": {
       "floorPlan": "floorplans/105C.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2433,
+        "height": 3033
+      }
     },
     "display": {
       "enabled": true,
@@ -1031,7 +1235,11 @@
     },
     "images": {
       "floorPlan": "floorplans/106.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2449,
+        "height": 3155
+      }
     },
     "display": {
       "enabled": true,
@@ -1051,7 +1259,11 @@
     },
     "images": {
       "floorPlan": "floorplans/108.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 2881,
+        "height": 2655
+      }
     },
     "display": {
       "enabled": true,
@@ -1071,7 +1283,11 @@
     },
     "images": {
       "floorPlan": "floorplans/111.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3393,
+        "height": 2535
+      }
     },
     "display": {
       "enabled": true,
@@ -1091,7 +1307,11 @@
     },
     "images": {
       "floorPlan": "floorplans/115.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3676,
+        "height": 2428
+      }
     },
     "display": {
       "enabled": true,
@@ -1111,7 +1331,11 @@
     },
     "images": {
       "floorPlan": "floorplans/118.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3679,
+        "height": 2140
+      }
     },
     "display": {
       "enabled": true,
@@ -1131,7 +1355,11 @@
     },
     "images": {
       "floorPlan": "floorplans/119A.png",
-      "keyMap": ""
+      "keyMap": "",
+      "floorPlanSize": {
+        "width": 3678,
+        "height": 2426
+      }
     },
     "display": {
       "enabled": true,

@@ -60,6 +60,18 @@ function toBoolean(value: unknown) {
   return String(value).toLowerCase() === "true";
 }
 
+function toOptionalImageSize(width: unknown, height: unknown) {
+  const parsedWidth = Number(width);
+  const parsedHeight = Number(height);
+  if (!Number.isFinite(parsedWidth) || !Number.isFinite(parsedHeight) || parsedWidth <= 0 || parsedHeight <= 0) {
+    return undefined;
+  }
+  return {
+    width: parsedWidth,
+    height: parsedHeight,
+  };
+}
+
 function parseCsvTypes(csvText: string): UnitType[] {
   const parsed = Papa.parse<Record<string, string>>(csvText, {
     header: true,
@@ -84,6 +96,7 @@ function parseCsvTypes(csvText: string): UnitType[] {
       },
       images: {
         floorPlan: row.floorPlan?.trim() || "",
+        floorPlanSize: toOptionalImageSize(row.floorPlanWidth, row.floorPlanHeight),
         keyMap: row.keyMap?.trim() || "",
       },
       display: {

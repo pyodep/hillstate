@@ -77,6 +77,7 @@ export type TypeDetailLayoutConfig = {
     top: string;
     maxWidth: number;
     maxHeight: number;
+    sourceScale?: number;
   };
   homeButton: {
     right: number;

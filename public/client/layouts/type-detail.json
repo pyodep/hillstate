@@ -27,8 +27,9 @@
   "floorPlan": {
     "left": "60.5%",
     "top": "48%",
-    "maxWidth": 240,
-    "maxHeight": 430
+    "maxWidth": 620,
+    "maxHeight": 540,
+    "sourceScale": 0.16
   },
   "homeButton": {
     "right": 56,

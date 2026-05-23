@@ -25,10 +25,6 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
   const { typeId } = useParams();
   const unitType = unitTypes.find((type) => type.id === typeId);
   const visibleTypes = unitTypes.filter((type) => type.display.enabled);
-  const currentTypeIndex = visibleTypes.findIndex((type) => type.id === unitType?.id);
-  const hasTypeSwitch = visibleTypes.length > 1 && currentTypeIndex >= 0;
-  const previousType = hasTypeSwitch ? visibleTypes[(currentTypeIndex - 1 + visibleTypes.length) % visibleTypes.length] : undefined;
-  const nextType = hasTypeSwitch ? visibleTypes[(currentTypeIndex + 1) % visibleTypes.length] : undefined;
 
   if (!typeId) {
     return <Navigate to="/types" replace />;
@@ -37,6 +33,22 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
   if (!unitType) {
     return <Navigate to={`/types/${siteConfig.defaultTypeId}`} replace />;
   }
+
+  const currentTypeIndex = visibleTypes.findIndex((type) => type.id === unitType.id);
+  const hasTypeSwitch = visibleTypes.length > 1 && currentTypeIndex >= 0;
+  const previousType = hasTypeSwitch ? visibleTypes[(currentTypeIndex - 1 + visibleTypes.length) % visibleTypes.length] : undefined;
+  const nextType = hasTypeSwitch ? visibleTypes[(currentTypeIndex + 1) % visibleTypes.length] : undefined;
+  const floorPlanSourceSize = unitType.images.floorPlanSize ?? { width: 1500, height: 2500 };
+  const floorPlanSourceScale = layout.floorPlan.sourceScale ?? 0.16;
+  const floorPlanScale = Math.min(
+    floorPlanSourceScale,
+    layout.floorPlan.maxWidth / floorPlanSourceSize.width,
+    layout.floorPlan.maxHeight / floorPlanSourceSize.height,
+  );
+  const floorPlanDisplaySize = {
+    width: Math.round(floorPlanSourceSize.width * floorPlanScale),
+    height: Math.round(floorPlanSourceSize.height * floorPlanScale),
+  };
 
   return (
     <main className="screen detail-page" style={{ background: layout.background.color }}>
@@ -89,19 +101,11 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
             "--floorplan-top": layout.floorPlan.top,
             "--floorplan-max-width": `${layout.floorPlan.maxWidth}px`,
             "--floorplan-max-height": `${layout.floorPlan.maxHeight}px`,
+            "--floorplan-width": `${floorPlanDisplaySize.width}px`,
+            "--floorplan-height": `${floorPlanDisplaySize.height}px`,
           } as React.CSSProperties
         }
       >
-        {previousType ? (
-          <Link
-            className="type-switch-link type-switch-prev"
-            to={`/types/${previousType.id}`}
-            aria-label={`${previousType.label} 타입으로 이동`}
-            title={`${previousType.label} 타입으로 이동`}
-          >
-            <ChevronLeft aria-hidden="true" size={54} strokeWidth={2.3} />
-          </Link>
-        ) : null}
         <div className="floorplan-stage">
           <ImageWithFallback
             src={unitType.images.floorPlan}
@@ -110,17 +114,27 @@ export function TypeDetailPage({ siteConfig, unitTypes, layout }: TypeDetailPage
             fallbackTitle="평면도 준비 중"
           />
         </div>
-        {nextType ? (
-          <Link
-            className="type-switch-link type-switch-next"
-            to={`/types/${nextType.id}`}
-            aria-label={`${nextType.label} 타입으로 이동`}
-            title={`${nextType.label} 타입으로 이동`}
-          >
-            <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
-          </Link>
-        ) : null}
       </section>
+      {previousType ? (
+        <Link
+          className="type-switch-link type-switch-prev"
+          to={`/types/${previousType.id}`}
+          aria-label={`${previousType.label} 타입으로 이동`}
+          title={`${previousType.label} 타입으로 이동`}
+        >
+          <ChevronLeft aria-hidden="true" size={54} strokeWidth={2.3} />
+        </Link>
+      ) : null}
+      {nextType ? (
+        <Link
+          className="type-switch-link type-switch-next"
+          to={`/types/${nextType.id}`}
+          aria-label={`${nextType.label} 타입으로 이동`}
+          title={`${nextType.label} 타입으로 이동`}
+        >
+          <ChevronRight aria-hidden="true" size={54} strokeWidth={2.3} />
+        </Link>
+      ) : null}
       <Link
         className="type-list-return-link"
         to="/types"

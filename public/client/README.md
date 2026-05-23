@@ -23,11 +23,16 @@
 ```json
 {
   "floorPlan": "floorplans/34A.png",
+  "floorPlanSize": {
+    "width": 1254,
+    "height": 2646
+  },
   "keyMap": "keymaps/34A.png"
 }
 ```
 
 예를 들어 `floorplans/59A.png` 파일을 추가했다면 `unit-types.json`에는 `"floorPlan": "floorplans/59A.png"`라고 적습니다.
+평면도 크기가 화면에서 흔들리지 않도록 `floorPlanSize`에는 이미지의 실제 픽셀 너비와 높이를 적습니다. CSV를 수정할 때는 `floorPlanWidth`, `floorPlanHeight` 열을 같은 값으로 맞추면 됩니다.
 
 ## CSV 사용
 

@@ -50,6 +50,12 @@ export const UnitTypeSchema = z.object({
   }),
   images: z.object({
     floorPlan: z.string(),
+    floorPlanSize: z
+      .object({
+        width: z.number(),
+        height: z.number(),
+      })
+      .optional(),
     keyMap: z.string(),
   }),
   display: z.object({
@@ -140,6 +146,7 @@ export const TypeDetailLayoutSchema = z.object({
     top: z.string(),
     maxWidth: z.number(),
     maxHeight: z.number(),
+    sourceScale: z.number().optional(),
   }),
   homeButton: z.object({
     right: z.number(),
