@@ -80,6 +80,7 @@ function createWindow() {
     minHeight: 540,
     backgroundColor: "#07102c",
     autoHideMenuBar: true,
+    kiosk: true,
     title: "힐스테이트 송파더그리드",
     webPreferences: {
       contextIsolation: true,
@@ -103,6 +104,22 @@ function createWindow() {
     if (!isInternalUrl) {
       event.preventDefault();
       shell.openExternal(url);
+    }
+  });
+
+  // 메뉴를 제거했으므로 키오스크 토글 단축키를 직접 연결한다(운영자용 비상 탈출).
+  // F11: 키오스크 켜기/끄기, Esc: 키오스크 상태일 때 해제.
+  win.webContents.on("before-input-event", (event, input) => {
+    if (input.type !== "keyDown") {
+      return;
+    }
+
+    if (input.key === "F11") {
+      win.setKiosk(!win.isKiosk());
+      event.preventDefault();
+    } else if (input.key === "Escape" && win.isKiosk()) {
+      win.setKiosk(false);
+      event.preventDefault();
     }
   });
 
