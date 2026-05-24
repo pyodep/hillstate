@@ -75,9 +75,10 @@ function registerAppProtocol() {
 function createWindow() {
   const win = new BrowserWindow({
     width: 1179,
-    height: 663,
+    height: 675,
     minWidth: 960,
-    minHeight: 540,
+    minHeight: 550,
+    useContentSize: true,
     backgroundColor: "#07102c",
     autoHideMenuBar: true,
     kiosk: true,
