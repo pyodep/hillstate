@@ -13,8 +13,8 @@
       "floorPlan": "floorplans/34A.webp",
       "keyMap": "keymaps/34A.webp",
       "floorPlanSize": {
-        "height": 2646,
-        "width": 1254
+        "height": 550,
+        "width": 261
       }
     },
     "display": {
@@ -37,8 +37,8 @@
       "floorPlan": "floorplans/34B.webp",
       "keyMap": "keymaps/34B.webp",
       "floorPlanSize": {
-        "height": 2648,
-        "width": 1428
+        "height": 551,
+        "width": 297
       }
     },
     "display": {
@@ -61,8 +61,8 @@
       "floorPlan": "floorplans/36.webp",
       "keyMap": "keymaps/36.webp",
       "floorPlanSize": {
-        "height": 1412,
-        "width": 2753
+        "height": 294,
+        "width": 573
       }
     },
     "display": {
@@ -85,8 +85,8 @@
       "floorPlan": "floorplans/42A.webp",
       "keyMap": "keymaps/42A.webp",
       "floorPlanSize": {
-        "height": 2163,
-        "width": 1788
+        "height": 450,
+        "width": 372
       }
     },
     "display": {
@@ -109,8 +109,8 @@
       "floorPlan": "floorplans/42B1.webp",
       "keyMap": "keymaps/42B1.webp",
       "floorPlanSize": {
-        "height": 2500,
-        "width": 1664
+        "height": 520,
+        "width": 346
       }
     },
     "display": {
@@ -133,8 +133,8 @@
       "floorPlan": "floorplans/42B2.webp",
       "keyMap": "keymaps/42B2.webp",
       "floorPlanSize": {
-        "height": 2502,
-        "width": 1528
+        "height": 520,
+        "width": 318
       }
     },
     "display": {
@@ -157,8 +157,8 @@
       "floorPlan": "floorplans/42C1.webp",
       "keyMap": "keymaps/42C1.webp",
       "floorPlanSize": {
-        "height": 2504,
-        "width": 1695
+        "height": 521,
+        "width": 353
       }
     },
     "display": {
@@ -181,8 +181,8 @@
       "floorPlan": "floorplans/42C2.webp",
       "keyMap": "keymaps/42C2.webp",
       "floorPlanSize": {
-        "height": 1712,
-        "width": 2526
+        "height": 356,
+        "width": 525
       }
     },
     "display": {
@@ -205,8 +205,8 @@
       "floorPlan": "floorplans/48.webp",
       "keyMap": "keymaps/48.webp",
       "floorPlanSize": {
-        "height": 1712,
-        "width": 2754
+        "height": 356,
+        "width": 573
       }
     },
     "display": {
@@ -229,8 +229,8 @@
       "floorPlan": "floorplans/50A.webp",
       "keyMap": "keymaps/50A.webp",
       "floorPlanSize": {
-        "height": 2411,
-        "width": 1769
+        "height": 501,
+        "width": 368
       }
     },
     "display": {
@@ -253,8 +253,8 @@
       "floorPlan": "floorplans/50B.webp",
       "keyMap": "keymaps/50B.webp",
       "floorPlanSize": {
-        "height": 2504,
-        "width": 1610
+        "height": 521,
+        "width": 335
       }
     },
     "display": {
@@ -277,8 +277,8 @@
       "floorPlan": "floorplans/50C.webp",
       "keyMap": "keymaps/50C.webp",
       "floorPlanSize": {
-        "height": 2505,
-        "width": 1836
+        "height": 521,
+        "width": 382
       }
     },
     "display": {
@@ -301,8 +301,8 @@
       "floorPlan": "floorplans/52.webp",
       "keyMap": "keymaps/52.webp",
       "floorPlanSize": {
-        "height": 2506,
-        "width": 1809
+        "height": 521,
+        "width": 376
       }
     },
     "display": {
@@ -325,8 +325,8 @@
       "floorPlan": "floorplans/54A.webp",
       "keyMap": "keymaps/54A.webp",
       "floorPlanSize": {
-        "height": 2503,
-        "width": 1880
+        "height": 521,
+        "width": 391
       }
     },
     "display": {
@@ -349,8 +349,8 @@
       "floorPlan": "floorplans/54B.webp",
       "keyMap": "keymaps/54B.webp",
       "floorPlanSize": {
-        "height": 2052,
-        "width": 2171
+        "height": 427,
+        "width": 452
       }
     },
     "display": {
@@ -373,8 +373,8 @@
       "floorPlan": "floorplans/55A.webp",
       "keyMap": "keymaps/55A.webp",
       "floorPlanSize": {
-        "height": 2504,
-        "width": 2126
+        "height": 521,
+        "width": 442
       }
     },
     "display": {
@@ -397,8 +397,8 @@
       "floorPlan": "floorplans/55B.webp",
       "keyMap": "keymaps/55B.webp",
       "floorPlanSize": {
-        "height": 2162,
-        "width": 1989
+        "height": 450,
+        "width": 414
       }
     },
     "display": {
@@ -421,8 +421,8 @@
       "floorPlan": "floorplans/57.webp",
       "keyMap": "keymaps/57.webp",
       "floorPlanSize": {
-        "height": 2491,
-        "width": 2505
+        "height": 518,
+        "width": 521
       }
     },
     "display": {
@@ -445,8 +445,8 @@
       "floorPlan": "floorplans/58A1.webp",
       "keyMap": "keymaps/58A1.webp",
       "floorPlanSize": {
-        "height": 3164,
-        "width": 1698
+        "height": 658,
+        "width": 353
       }
     },
     "display": {
@@ -469,8 +469,8 @@
       "floorPlan": "floorplans/58A2.webp",
       "keyMap": "keymaps/58A2.webp",
       "floorPlanSize": {
-        "height": 1711,
-        "width": 3163
+        "height": 356,
+        "width": 658
       }
     },
     "display": {
@@ -493,8 +493,8 @@
       "floorPlan": "floorplans/59A.webp",
       "keyMap": "keymaps/59A.webp",
       "floorPlanSize": {
-        "height": 2218,
-        "width": 2164
+        "height": 461,
+        "width": 450
       }
     },
     "display": {
@@ -517,8 +517,8 @@
       "floorPlan": "floorplans/59B.webp",
       "keyMap": "keymaps/59B.webp",
       "floorPlanSize": {
-        "height": 1930,
-        "width": 2434
+        "height": 401,
+        "width": 506
       }
     },
     "display": {
@@ -541,8 +541,8 @@
       "floorPlan": "floorplans/60.webp",
       "keyMap": "keymaps/60.webp",
       "floorPlanSize": {
-        "height": 2265,
-        "width": 2138
+        "height": 471,
+        "width": 445
       }
     },
     "display": {
@@ -565,8 +565,8 @@
       "floorPlan": "floorplans/61.webp",
       "keyMap": "keymaps/61.webp",
       "floorPlanSize": {
-        "height": 2147,
-        "width": 2095
+        "height": 447,
+        "width": 436
       }
     },
     "display": {
@@ -589,8 +589,8 @@
       "floorPlan": "floorplans/62.webp",
       "keyMap": "keymaps/62.webp",
       "floorPlanSize": {
-        "height": 2649,
-        "width": 2470
+        "height": 551,
+        "width": 514
       }
     },
     "display": {
@@ -613,8 +613,8 @@
       "floorPlan": "floorplans/75.webp",
       "keyMap": "keymaps/75.webp",
       "floorPlanSize": {
-        "height": 2011,
-        "width": 2841
+        "height": 418,
+        "width": 591
       }
     },
     "display": {
@@ -637,8 +637,8 @@
       "floorPlan": "floorplans/78.webp",
       "keyMap": "keymaps/78.webp",
       "floorPlanSize": {
-        "height": 2782,
-        "width": 2165
+        "height": 579,
+        "width": 450
       }
     },
     "display": {
@@ -661,8 +661,8 @@
       "floorPlan": "floorplans/79.webp",
       "keyMap": "keymaps/79.webp",
       "floorPlanSize": {
-        "height": 2894,
-        "width": 2192
+        "height": 602,
+        "width": 456
       }
     },
     "display": {
@@ -685,8 +685,8 @@
       "floorPlan": "floorplans/82.webp",
       "keyMap": "keymaps/82.webp",
       "floorPlanSize": {
-        "height": 2212,
-        "width": 2948
+        "height": 460,
+        "width": 613
       }
     },
     "display": {
@@ -709,8 +709,8 @@
       "floorPlan": "floorplans/84.webp",
       "keyMap": "keymaps/84.webp",
       "floorPlanSize": {
-        "height": 2430,
-        "width": 2616
+        "height": 505,
+        "width": 544
       }
     },
     "display": {
@@ -733,8 +733,8 @@
       "floorPlan": "floorplans/88.webp",
       "keyMap": "keymaps/88.webp",
       "floorPlanSize": {
-        "height": 3138,
-        "width": 2676
+        "height": 653,
+        "width": 557
       }
     },
     "display": {
@@ -757,8 +757,8 @@
       "floorPlan": "floorplans/89.webp",
       "keyMap": "keymaps/89.webp",
       "floorPlanSize": {
-        "height": 3081,
-        "width": 2215
+        "height": 641,
+        "width": 461
       }
     },
     "display": {
@@ -781,8 +781,8 @@
       "floorPlan": "floorplans/91.webp",
       "keyMap": "keymaps/91.webp",
       "floorPlanSize": {
-        "height": 2640,
-        "width": 2618
+        "height": 549,
+        "width": 545
       }
     },
     "display": {
@@ -805,8 +805,8 @@
       "floorPlan": "floorplans/95.webp",
       "keyMap": "keymaps/95.webp",
       "floorPlanSize": {
-        "height": 2274,
-        "width": 2907
+        "height": 473,
+        "width": 605
       }
     },
     "display": {
@@ -829,8 +829,8 @@
       "floorPlan": "floorplans/96A.webp",
       "keyMap": "keymaps/96A.webp",
       "floorPlanSize": {
-        "height": 2335,
-        "width": 2887
+        "height": 486,
+        "width": 600
       }
     },
     "display": {
@@ -853,8 +853,8 @@
       "floorPlan": "floorplans/96B.webp",
       "keyMap": "keymaps/96B.webp",
       "floorPlanSize": {
-        "height": 2805,
-        "width": 2433
+        "height": 583,
+        "width": 506
       }
     },
     "display": {
@@ -877,8 +877,8 @@
       "floorPlan": "floorplans/98A.webp",
       "keyMap": "keymaps/98A.webp",
       "floorPlanSize": {
-        "height": 2956,
-        "width": 2460
+        "height": 615,
+        "width": 512
       }
     },
     "display": {
@@ -901,8 +901,8 @@
       "floorPlan": "floorplans/98B.webp",
       "keyMap": "keymaps/98B.webp",
       "floorPlanSize": {
-        "height": 2624,
-        "width": 2908
+        "height": 546,
+        "width": 605
       }
     },
     "display": {
@@ -925,8 +925,8 @@
       "floorPlan": "floorplans/98C.webp",
       "keyMap": "keymaps/98C.webp",
       "floorPlanSize": {
-        "height": 2077,
-        "width": 3678
+        "height": 432,
+        "width": 765
       }
     },
     "display": {
@@ -949,8 +949,8 @@
       "floorPlan": "floorplans/98D.webp",
       "keyMap": "keymaps/98D.webp",
       "floorPlanSize": {
-        "height": 2916,
-        "width": 2432
+        "height": 607,
+        "width": 506
       }
     },
     "display": {
@@ -973,8 +973,8 @@
       "floorPlan": "floorplans/98E.webp",
       "keyMap": "keymaps/98E.webp",
       "floorPlanSize": {
-        "height": 2787,
-        "width": 2616
+        "height": 580,
+        "width": 544
       }
     },
     "display": {
@@ -997,8 +997,8 @@
       "floorPlan": "floorplans/98F.webp",
       "keyMap": "keymaps/98F.webp",
       "floorPlanSize": {
-        "height": 2787,
-        "width": 2615
+        "height": 580,
+        "width": 544
       }
     },
     "display": {
@@ -1021,8 +1021,8 @@
       "floorPlan": "floorplans/98G.webp",
       "keyMap": "keymaps/98G.webp",
       "floorPlanSize": {
-        "height": 2568,
-        "width": 2649
+        "height": 534,
+        "width": 551
       }
     },
     "display": {
@@ -1045,8 +1045,8 @@
       "floorPlan": "floorplans/99A.webp",
       "keyMap": "keymaps/99A.webp",
       "floorPlanSize": {
-        "height": 2036,
-        "width": 3235
+        "height": 423,
+        "width": 673
       }
     },
     "display": {
@@ -1069,8 +1069,8 @@
       "floorPlan": "floorplans/99B.webp",
       "keyMap": "keymaps/99B.webp",
       "floorPlanSize": {
-        "height": 2882,
-        "width": 2432
+        "height": 599,
+        "width": 506
       }
     },
     "display": {
@@ -1093,8 +1093,8 @@
       "floorPlan": "floorplans/100A.webp",
       "keyMap": "keymaps/100A.webp",
       "floorPlanSize": {
-        "height": 2916,
-        "width": 2433
+        "height": 607,
+        "width": 506
       }
     },
     "display": {
@@ -1117,8 +1117,8 @@
       "floorPlan": "floorplans/100B.webp",
       "keyMap": "keymaps/100B.webp",
       "floorPlanSize": {
-        "height": 2437,
-        "width": 2988
+        "height": 507,
+        "width": 622
       }
     },
     "display": {
@@ -1141,8 +1141,8 @@
       "floorPlan": "floorplans/104.webp",
       "keyMap": "keymaps/104.webp",
       "floorPlanSize": {
-        "height": 3216,
-        "width": 2272
+        "height": 669,
+        "width": 473
       }
     },
     "display": {
@@ -1165,8 +1165,8 @@
       "floorPlan": "floorplans/105A.webp",
       "keyMap": "keymaps/105A.webp",
       "floorPlanSize": {
-        "height": 2468,
-        "width": 3046
+        "height": 513,
+        "width": 634
       }
     },
     "display": {
@@ -1189,8 +1189,8 @@
       "floorPlan": "floorplans/105B.webp",
       "keyMap": "keymaps/105B.webp",
       "floorPlanSize": {
-        "height": 3234,
-        "width": 2280
+        "height": 673,
+        "width": 474
       }
     },
     "display": {
@@ -1213,8 +1213,8 @@
       "floorPlan": "floorplans/105C.webp",
       "keyMap": "keymaps/105C.webp",
       "floorPlanSize": {
-        "height": 3033,
-        "width": 2433
+        "height": 631,
+        "width": 506
       }
     },
     "display": {
@@ -1237,8 +1237,8 @@
       "floorPlan": "floorplans/106.webp",
       "keyMap": "keymaps/106.webp",
       "floorPlanSize": {
-        "height": 3155,
-        "width": 2449
+        "height": 656,
+        "width": 509
       }
     },
     "display": {
@@ -1261,8 +1261,8 @@
       "floorPlan": "floorplans/108.webp",
       "keyMap": "keymaps/108.webp",
       "floorPlanSize": {
-        "height": 2655,
-        "width": 2881
+        "height": 552,
+        "width": 599
       }
     },
     "display": {
@@ -1285,8 +1285,8 @@
       "floorPlan": "floorplans/111.webp",
       "keyMap": "keymaps/111.webp",
       "floorPlanSize": {
-        "height": 2535,
-        "width": 3393
+        "height": 527,
+        "width": 706
       }
     },
     "display": {
@@ -1309,8 +1309,8 @@
       "floorPlan": "floorplans/115.webp",
       "keyMap": "keymaps/115.webp",
       "floorPlanSize": {
-        "height": 2428,
-        "width": 3676
+        "height": 505,
+        "width": 765
       }
     },
     "display": {
@@ -1333,8 +1333,8 @@
       "floorPlan": "floorplans/118.webp",
       "keyMap": "keymaps/118.webp",
       "floorPlanSize": {
-        "height": 2140,
-        "width": 3679
+        "height": 445,
+        "width": 765
       }
     },
     "display": {
@@ -1357,8 +1357,8 @@
       "floorPlan": "floorplans/119A.webp",
       "keyMap": "keymaps/119A.webp",
       "floorPlanSize": {
-        "height": 2426,
-        "width": 3678
+        "height": 505,
+        "width": 765
       }
     },
     "display": {

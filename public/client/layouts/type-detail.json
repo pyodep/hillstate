@@ -18,7 +18,7 @@
   },
   "typeInfo": {
     "left": 63,
-    "top": 350,
+    "top": 318,
     "width": 214,
     "typeFontSize": 86,
     "labelFontSize": 22,
@@ -29,7 +29,7 @@
     "top": "50%",
     "maxWidth": 806,
     "maxHeight": 702,
-    "sourceScale": 0.208
+    "sourceScale": 1
   },
   "homeButton": {
     "right": 56,
