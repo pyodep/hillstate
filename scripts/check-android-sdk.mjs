@@ -1,7 +1,18 @@
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
-const sdkRoot = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT;
+function sdkRootFromLocalProperties() {
+  const localPropertiesPath = path.join(process.cwd(), "android", "local.properties");
+  if (!existsSync(localPropertiesPath)) {
+    return "";
+  }
+
+  const contents = readFileSync(localPropertiesPath, "utf8");
+  const match = contents.match(/^sdk\.dir=(.+)$/m);
+  return match?.[1]?.replace(/\\:/g, ":").replace(/\\\\/g, "\\") ?? "";
+}
+
+const sdkRoot = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT || sdkRootFromLocalProperties();
 
 if (!sdkRoot || !existsSync(sdkRoot)) {
   throw new Error(
