@@ -30,6 +30,9 @@ body {
   color: var(--color-text-dark);
   font-family: var(--font-system);
   background: #111827;
+  overscroll-behavior: none;
+  touch-action: manipulation;
+  user-select: none;
 }
 
 a {
@@ -46,6 +49,8 @@ a {
   position: relative;
   width: 100vw;
   height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   min-height: 0;
   overflow: hidden;
 }

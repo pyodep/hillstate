@@ -1,0 +1,31 @@
+{
+  "name": "힐스테이트 송파더그리드 타입별 세대 안내",
+  "short_name": "송파더그리드",
+  "description": "힐스테이트 송파더그리드 타입별 세대 안내",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#07102c",
+  "theme_color": "#07102c",
+  "icons": [
+    {
+      "src": "pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

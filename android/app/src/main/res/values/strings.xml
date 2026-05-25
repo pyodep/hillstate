@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Hillstate Songpa The Grid</string>
+    <string name="title_activity_main">Hillstate Songpa The Grid</string>
+    <string name="package_name">com.hillstate.songpathegrid</string>
+    <string name="custom_url_scheme">com.hillstate.songpathegrid</string>
+</resources>

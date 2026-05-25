@@ -4,6 +4,7 @@ import { loadClientContent, type ClientContentData } from "../data/loadClientCon
 import { MainPage } from "../pages/MainPage";
 import { TypeDetailPage } from "../pages/TypeDetailPage";
 import { TypeListPage } from "../pages/TypeListPage";
+import { preloadClientAssets } from "../utils/preloadClientAssets";
 
 const DESIGN_STAGE = {
   width: 1179,
@@ -28,7 +29,10 @@ export default function App() {
 
   useEffect(() => {
     loadClientContent()
-      .then(setSiteData)
+      .then((data) => {
+        setSiteData(data);
+        preloadClientAssets(data);
+      })
       .catch((reason) => {
         console.error(reason);
         setError(reason instanceof Error ? reason.message : "데이터 설정 오류가 발생했습니다.");

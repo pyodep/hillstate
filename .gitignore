@@ -3,5 +3,13 @@ node_modules/
 dist/
 release/
 screenshots/
+android/.gradle/
+android/app/build/
+android/build/
+android/captures/
+android/local.properties
+android/app/src/main/assets/capacitor.config.json
+android/app/src/main/assets/capacitor.plugins.json
+android/app/src/main/assets/public/
 datas/평면도 모음-260523/
 datas/KEYMAP*/
