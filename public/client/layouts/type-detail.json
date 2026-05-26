@@ -25,10 +25,10 @@
     "valueFontSize": 22
   },
   "floorPlan": {
-    "left": "60.5%",
+    "left": "59%",
     "top": "50%",
-    "maxWidth": 806,
-    "maxHeight": 702,
+    "maxWidth": 530,
+    "maxHeight": 590,
     "sourceScale": 1
   },
   "homeButton": {
